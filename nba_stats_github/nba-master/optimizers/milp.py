@@ -1,0 +1,2 @@
+class NBAMixedIntegerOptimizer(object):
+    pass

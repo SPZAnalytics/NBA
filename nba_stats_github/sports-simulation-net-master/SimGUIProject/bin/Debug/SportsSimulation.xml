@@ -1,0 +1,510 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+SportsSimulation
+</name>
+</assembly>
+<members>
+<member name="P:SportsSimulation.Player.Base.BasePlayerSeason.Year">
+	<summary>
+ Gets or sets the year.
+ </summary>
+	<value>Integer representing season year.</value>
+	<remarks>Should error check that BasePlayerTeamSeasons.Year is equal to this value.</remarks>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayerSeason.PlayerTeamSeasons">
+	<summary>
+ Gets or sets the player team seasons.
+ </summary>
+	<value>List of BasePlayerTeamSeason objects.</value>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerSeason.#ctor">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"/> class.
+ </summary>
+	<remarks>Sets PlayerTeamSeasons property to empty list.</remarks>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerSeason.#ctor(System.Int32)">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"/> class.
+ </summary>
+	<param name="year">Integer representing the season year.</param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerSeason.AddPlayerTeamSeason(SportsSimulation.Player.Base.BasePlayerTeamSeason)">
+	<summary>
+ Adds BasePlayerTeamSeason to List of BasePlayerTeamSeason
+ </summary>
+	<param name="teamSeason"><see cref="T:SportsSimulation.Player.Base.BasePlayerTeamSeason"></see> to add.</param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerSeason.AddPlayerTeamSeasons(System.Collections.Generic.List{SportsSimulation.Player.Base.BasePlayerTeamSeason})">
+	<summary>
+ Adds List of BasePlayerTeamSeason to existing List of BasePlayerTeamSeason
+ </summary>
+	<param name="teamSeasons">List of <see cref="T:SportsSimulation.Player.Base.BasePlayerTeamSeason"></see> to add.</param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerSeason.GetSeasonTotal(System.String)">
+	<summary>
+ Gets the season total for a particular statistic.
+ </summary>
+	<param name="statname">String representing statistic name.</param>
+	<returns>Sum of stat from BasePlayerTeamSeason in list.</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerSeason.NumberOfBasePlayerTeamSeasons">
+	<summary>
+ Numbers BasePlayerTeamSeason objects in list.
+ </summary>
+	<returns>Integer</returns>
+</member><member name="P:SportsSimulation.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:SportsSimulation.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:SportsSimulation.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayerId.Id">
+	<summary>
+ Gets or sets the id.
+ </summary>
+	<value>String representing Id.</value>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayerId.Source">
+	<summary>
+ Gets or sets the source.
+ </summary>
+	<value>The source of the Id value.</value>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerId.#ctor">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayerId"/> class.
+ </summary>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerId.#ctor(System.String,System.String)">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayerId"/> class.
+ </summary>
+	<param name="id">The id.</param>
+	<param name="source">The source.</param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerId.#ctor(System.Collections.Generic.Dictionary{System.String,System.String})">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayerId"/> class.
+ </summary>
+	<param name="pid">Dictionary with id and source strings.</param>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayer.BirthDate">
+	<summary>
+ Gets or sets the birth date.
+ </summary>
+	<value>The birth date.</value>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayer.FirstName">
+	<summary>
+ Gets or sets the first name.
+ </summary>
+	<value>The first name.</value>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayer.Height">
+	<summary>
+ Gets or sets the height.
+ </summary>
+	<value>The height (inches).</value>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayer.Ids">
+	<summary>
+ Gets or sets the ids.
+ </summary>
+	<value>List of <see cref="T:SportsSimulation.Player.Base.BasePlayerId"></see> objects.</value>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayer.LastName">
+	<summary>
+ Gets or sets the last name.
+ </summary>
+	<value>The last name.</value>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayer.MiddleName">
+	<summary>
+ Gets or sets the name of the middle.
+ </summary>
+	<value>The name of the middle.</value>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayer.Query">
+	<summary>
+ Gets or instantiates query object.
+ </summary>
+	<value><see cref="T:SportsSimulation.Player.Base.BasePlayerQuery"></see> object.</value>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayer.Seasons">
+	<summary>
+ Gets or sets list of seasons.
+ </summary>
+	<value>List of <see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see> objects.</value>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayer.Suffix">
+	<summary>
+ Gets or sets the suffix (jr., III, etc.)
+ </summary>
+	<value>The suffix.</value>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayer.Weight">
+	<summary>
+ Gets or sets the weight.
+ </summary>
+	<value>The weight (pounds).</value>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.#ctor">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayer"/> class.
+ </summary>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.AddId(SportsSimulation.Player.Base.BasePlayerId)">
+	<summary>
+ Adds <see cref="T:SportsSimulation.Player.Base.BasePlayerId"></see> object.
+ </summary>
+	<param name="id"><see cref="T:SportsSimulation.Player.Base.BasePlayerId"></see></param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.AddIds(System.Collections.Generic.List{SportsSimulation.Player.Base.BasePlayerId})">
+	<summary>
+ Adds List of <see cref="T:SportsSimulation.Player.Base.BasePlayerId"></see> object to existing list.
+ </summary>
+	<param name="ids">List of <see cref="T:SportsSimulation.Player.Base.BasePlayerId"></see>.</param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.AddSeason(SportsSimulation.Player.Base.BasePlayerSeason)">
+	<summary>
+ Adds <see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see> to list of seasons.
+ </summary>
+	<param name="season"><see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see></param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.AddSeasons(System.Collections.Generic.List{SportsSimulation.Player.Base.BasePlayerSeason})">
+	<summary>
+ Adds List of <see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see> object to existing list.
+ </summary>
+	<param name="seasons">List of <see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see>.</param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.CareerTotal(System.String)">
+	<summary>
+ Calculates total over all seasons in Seasons property.
+ </summary>
+	<param name="statname">The name of the statistic to calculate the total.</param>
+	<returns>Total of a single statistic.</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.GetBasePlayerIds">
+	<summary>
+ Gets the base player ids.
+ </summary>
+	<returns>List of ids</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.GetCareer">
+	<summary>
+ Gets all <see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see> in list.
+ </summary>
+	<returns><see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see></returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.GetIdStrings">
+	<summary>
+ Gets list of id strings.
+ </summary>
+	<returns>List of String</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.GetIdsAndSources">
+	<summary>
+ Gets dictionary of the ids and sources.
+ </summary>
+	<returns>Dictionary of String, String</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.GetSeason(System.Int32)">
+	<summary>
+ Gets single season from List of seasons.
+ </summary>
+	<param name="year">The season year.</param>
+	<returns><see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see></returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.GetSeason(System.Collections.Generic.List{SportsSimulation.Player.Base.BasePlayerSeason},System.Int32)">
+	<summary>
+ Gets single PlayerSeason object from Seasons list.
+ </summary>
+	<param name="year">The season year.</param>
+	<returns>A single PlayerSeason object.</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.GetSeasons(System.Int32,System.Int32)">
+	<summary>
+ Gets list of seasons based on date range.
+ </summary>
+	<param name="year1">Starting year.</param>
+	<param name="year2">Ending year.</param>
+	<returns>List of <see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see></returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.GetSeasons(System.Collections.Generic.List{SportsSimulation.Player.Base.BasePlayerSeason},System.Int32,System.Int32)">
+	<summary>
+ Gets a list seasons based on date range.
+ </summary>
+	<param name="lbps">List of <see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see></param>
+	<param name="year1">Starting year.</param>
+	<param name="year2">Ending year.</param>
+	<returns>List of <see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see></returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.GetSeasonTotal(System.String,System.Int32)">
+	<summary>
+ Gets the season total for a particular statistic.
+ </summary>
+	<param name="statName">Statistic name.</param>
+	<param name="year">The season year.</param>
+	<returns>Double</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.GetSources">
+	<summary>
+ Gets a List of String of the sources for id values.
+ </summary>
+	<returns>List of String</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.LastSeason">
+	<summary>
+ Returns the last season in a player's career.
+ </summary>
+	<returns><see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see></returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.SeasonRangeTotal(System.String,System.Int32,System.Int32)">
+	<summary>
+ Returns total for statistic over a range of seasons.
+ </summary>
+	<param name="statname">The statname.</param>
+	<param name="startyear">The startyear.</param>
+	<param name="endyear">The endyear.</param>
+	<returns>Double</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayer.SeasonRangeTotal(System.Collections.Generic.List{SportsSimulation.Player.Base.BasePlayerSeason},System.String,System.Int32,System.Int32)">
+	<summary>
+ Returns total for statistic over a range of seasons.
+ </summary>
+	<param name="s">List of <see cref="T:SportsSimulation.Player.Base.BasePlayerSeason"></see></param>
+	<param name="statname">The statname.</param>
+	<param name="startyear">The startyear.</param>
+	<param name="endyear">The endyear.</param>
+	<returns>Double</returns>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayerTeamSeason.Stats">
+	<summary>
+ Gets or sets the player stats.
+ </summary>
+	<value>Stats dictionary.</value>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayerTeamSeason.Year">
+	<summary>
+ Gets or sets the year of the season.
+ </summary>
+	<value>The year.</value>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerTeamSeason.#ctor">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayerTeamSeason"/> class.
+ </summary>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerTeamSeason.#ctor(System.Int32)">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayerTeamSeason"/> class.
+ </summary>
+	<param name="year">The year.</param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerTeamSeason.#ctor(System.Collections.Generic.Dictionary{System.String,System.Object})">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayerTeamSeason"/> class.
+ </summary>
+	<param name="stats">The statistics.</param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerTeamSeason.#ctor(System.Int32,System.Collections.Generic.Dictionary{System.String,System.Object})">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayerTeamSeason"/> class.
+ </summary>
+	<param name="year">The year.</param>
+	<param name="stats">The statistics.</param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerTeamSeason.AddStat(System.String,System.Object)">
+	<summary>
+ Adds a statistic to statistics dictionary.
+ </summary>
+	<param name="n">The name of the statistic.</param>
+	<param name="v">The value.</param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerTeamSeason.AddStats(System.Collections.Generic.Dictionary{System.String,System.Object})">
+	<summary>
+ Adds multiple statistics to statistics dictionary.
+ </summary>
+	<param name="stats">The statistics dictionary.</param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerTeamSeason.GetStat(System.String)">
+	<summary>
+ Gets an individual stat from a team season.
+ </summary>
+	<param name="statname">The statistic name.</param>
+	<returns>Object</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerXML.#ctor">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayerXML"/> class.
+ </summary>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerXML.LoadBioFromXML(System.String,System.String)">
+	<summary>
+ Loads player's biographical data from XML file.
+ </summary>
+	<param name="fn">XML filename.</param>
+	<param name="id">Id attribute of player.</param>
+	<returns><see cref="T:SportsSimulation.Player.Base.BasePlayer"></see></returns>
+	<remarks>Makes strong assumptions about XML file structure, should validate against schema.</remarks>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerXML.LoadStatsFromXML(System.String,System.String)">
+	<summary>
+ Loads player's biographical data from XML file.
+ </summary>
+	<param name="fn">XML filename.</param>
+	<param name="id">Id attribute value</param>
+	<returns><see cref="T:SportsSimulation.Player.Base.BasePlayer"></see></returns>
+	<remarks>Makes strong assumptions about XML file structure, should validate against schema.</remarks>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerXML.AddPropertyFromAttribute(SportsSimulation.Player.Base.BasePlayer,System.Xml.XmlAttribute)">
+	<summary>
+ Adds property to <see cref="T:SportsSimulation.Player.Base.BasePlayer"></see> from attribute.
+ </summary>
+	<param name="player"><see cref="T:SportsSimulation.Player.Base.BasePlayer"></see></param>
+	<param name="att"><see cref="T:System.Xml.XmlAttribute"></see></param>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerXML.CreatePlayerTeamSeasonsFromSeasonNode(System.Xml.XmlNode)">
+	<summary>
+ Creates list of <see cref="T:SportsSimulation.Player.Base.BasePlayerTeamSeason"></see> from season node.
+ </summary>
+	<param name="seasonNode">The season node.</param>
+	<returns></returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerXML.CreateTeamSeasonStats(System.Xml.XmlNode)">
+	<summary>
+ Creates the team season stats.
+ </summary>
+	<param name="teamSeason">XMLNode.</param>
+	<returns>Dictionary of statName and statValue.</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerXML.CreateXMLDocument(System.String)">
+	<summary>
+ Creates the XML document.
+ </summary>
+	<param name="fn">XMLFilename.</param>
+	<returns><see cref="T:System.Xml.XmlDocument"></see></returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerXML.GetAttributeList(System.Xml.XmlNode)">
+	<summary>
+ Gets the attribute list as XmlAttributeCollection.
+ </summary>
+	<param name="playerNode">XmlNode representing player.</param>
+	<returns>List of attributes.</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerXML.GetPlayerNodeById(System.Xml.XmlDocument,System.String)">
+	<summary>
+ Uses XPath query to find player by id value.
+ </summary>
+	<param name="doc"><see cref="T:System.Xml.XmlDocument"></see></param>
+	<param name="id">Id string.</param>
+	<returns><see cref="T:System.Xml.XmlNode"></see></returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerXML.GetPlayerNodeSeasons(System.Xml.XmlNode)">
+	<summary>
+ Gets XmlNodeList representing list of seasons.
+ </summary>
+	<param name="playerNode">XmlNode.</param>
+	<returns>XmlNodeList representing seasons.</returns>
+</member><member name="T:SportsSimulation.Player.Base.BasePlayerXML">
+	<summary>
+ Expected XML structure
+ <code>
+			<Season year="2010">
+				<TeamSeason>
+					<Points>2010</Points>
+					<Rebounds>201</Rebounds>
+				</TeamSeason>
+				<TeamSeason>
+					<Points>2010</Points>
+					<Rebounds>201</Rebounds>
+				</TeamSeason>
+			</Season>
+		</code>
+	</summary>
+</member><member name="F:SportsSimulation.Player.Base.BasePlayerQuery._Instance">
+	<summary>
+ Singleton pattern - only need one BasePlayerQuery object.
+ </summary>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayerQuery.Instance">
+	<summary>
+ Gets or creates instance of <see cref="T:SportsSimulation.Player.Base.BasePlayerQuery"/> object.
+ </summary>
+	<value>The instance.</value>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerQuery.#ctor">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Player.Base.BasePlayerQuery"/> class.
+ </summary>
+	<remarks>Uses singleton pattern, so New is private.</remarks>
+</member><member name="P:SportsSimulation.Team.Base.BaseTeam.GamesLost">
+	<summary>
+ Gets or sets the games lost.
+ </summary>
+	<value>The team's games lost.</value>
+</member><member name="P:SportsSimulation.Team.Base.BaseTeam.GamesWon">
+	<summary>
+ Gets or sets the games won.
+ </summary>
+	<value>The team's games won.</value>
+</member><member name="P:SportsSimulation.Team.Base.BaseTeam.Id">
+	<summary>
+ Gets or sets the team id.
+ </summary>
+	<value>The team's id.</value>
+</member><member name="P:SportsSimulation.Team.Base.BaseTeam.LeagueId">
+	<summary>
+ Gets or sets the league id.
+ </summary>
+	<value>The league's id.</value>
+</member><member name="P:SportsSimulation.Team.Base.BaseTeam.Players">
+	<summary>
+ Gets or sets list of players.
+ </summary>
+	<value><see cref="T:System.Collections.Generic.List`1"></see></value>
+</member><member name="P:SportsSimulation.Team.Base.BaseTeam.PointsAllowed">
+	<summary>
+ Gets or sets the points allowed.
+ </summary>
+	<value>The points allowed by the team.</value>
+</member><member name="P:SportsSimulation.Team.Base.BaseTeam.PointsScored">
+	<summary>
+ Gets or sets the points scored.
+ </summary>
+	<value>The points scored by the team.</value>
+</member><member name="P:SportsSimulation.Team.Base.BaseTeam.StatCategories">
+	<summary>
+ Need list of stat categories to perform team aggregate calculations.
+ </summary>
+	<value>List of stat categories.</value>
+</member><member name="M:SportsSimulation.Team.Base.BaseTeam.#ctor">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Team.Base.BaseTeam"/> class.
+ </summary>
+</member><member name="M:SportsSimulation.Team.Base.BaseTeam.#ctor(System.Collections.Generic.List{System.String})">
+	<summary>
+ Initializes a new instance of the <see cref="T:SportsSimulation.Team.Base.BaseTeam"/> class.
+ </summary>
+	<param name="statCategories">List of stat categories.</param>
+	<remarks>Chose flexible implementation where can choose what stats matter. If need rigid list, 
+ then can subclass and use constant instead of permitting assignment when creating object.</remarks>
+</member><member name="M:SportsSimulation.Team.Base.BaseTeam.AddPlayer(SportsSimulation.Player.Base.BasePlayer)">
+	<summary>
+ Adds player to list of players.
+ </summary>
+	<param name="player"><see cref="T:SportsSimulation.Player.Base.BasePlayer"></see></param>
+</member><member name="M:SportsSimulation.Team.Base.BaseTeam.AddPlayers(System.Collections.Generic.List{SportsSimulation.Player.Base.BasePlayer})">
+	<summary>
+ Adds list of players to existing list of players.
+ </summary>
+	<param name="players"><see cref="T:System.Collections.Generic.List`1"></see></param>
+</member><member name="M:SportsSimulation.Team.Base.BaseTeam.AllTeamStatsTotals(System.Collections.Generic.List{SportsSimulation.Player.Base.BasePlayer},System.Int32)">
+	<summary>
+ Creates dictionary of statname and team totals by looping through each stat category.
+ </summary>
+	<param name="players">List of players.</param>
+	<param name="year">Season year.</param>
+	<returns>Dictionary of statname and team totals.</returns>
+</member><member name="M:SportsSimulation.Team.Base.BaseTeam.GetPlayerById(System.Collections.Generic.List{SportsSimulation.Player.Base.BasePlayer},System.String,System.String)">
+	<summary>
+ Gets the player by id.
+ </summary>
+	<param name="id">The id string.</param>
+	<returns><see cref="T:SportsSimulation.Player.Base.BasePlayer"></see> if player with id exists; otherwise nothing.</returns>
+</member><member name="M:SportsSimulation.Team.Base.BaseTeam.TeamStatTotal(System.Collections.Generic.List{SportsSimulation.Player.Base.BasePlayer},System.String,System.Int32)">
+	<summary>
+ Calculates team's stat total for a single stat category.
+ </summary>
+	<param name="lbp">List of players.</param>
+	<param name="statname">Name of statistic to total.</param>
+	<param name="year">The season year.</param>
+	<returns>Double</returns>
+</member><member name="M:SportsSimulation.Team.Base.BaseTeam.TeamLeaderInStat(System.Collections.Generic.List{SportsSimulation.Player.Base.BasePlayer},System.String,System.Int32)">
+	<summary>
+ Determines player that leads team in particular stat.
+ </summary>
+	<param name="lbp">List of players.</param>
+	<param name="statname">Name of statistic to determine leader.</param>
+	<param name="year">The season year.</param>
+	<returns>BasePlayer</returns>
+</member><member name="T:SportsSimulation.Team.Base.BaseTeam">
+	<summary>
+ Right now a container for BasePlayer objects, with some aggregation features.
+ </summary>
+</member><member name="F:SportsSimulation.Player.Base.BasePlayerStatisticalFunctions._Instance">
+	<summary>
+ Private variable implementing Singleton pattern
+ </summary>
+</member><member name="P:SportsSimulation.Player.Base.BasePlayerStatisticalFunctions.Instance">
+	<summary>
+ Singleton pattern: Gets or instantiates <see cref="T:SportsSimulation.Player.Base.BasePlayerStatisticalFunctions"></see> object.
+ </summary>
+	<value>Instance of object.</value>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerStatisticalFunctions.PerGame(System.Int32,System.Int32)">
+	<summary>
+ Calculates per game statistic given games played and stat total.
+ </summary>
+	<param name="total">The stat total.</param>
+	<param name="gp">The games played.</param>
+	<returns>Double</returns>
+</member><member name="M:SportsSimulation.Player.Base.BasePlayerStatisticalFunctions.PerTimePeriod(System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Calculates per XX minutes statistic given minutes played, stat total, and timeperiod.
+ </summary>
+	<param name="total">The stat total.</param>
+	<param name="min">The minutes played.</param>
+	<param name="timeperiod">The timeperiod used for calculation.</param>
+	<returns>Double</returns>
+</member>
+</members>
+</doc>

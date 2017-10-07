@@ -1,0 +1,61 @@
+Football outsiders API
+
+-- weekByTeam
+
+http://www.footballoutsiders.com/premium/weekByTeam.php?od=O&year=2015&team=ARI&week=1
+
+import time
+
+import browsercookie
+import requests
+
+cj = browsercookie.chrome()
+
+years = range(2000,2016)
+weeks = range(1,18)
+teams = ['ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE', 'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAC', 'KC', 'MIA', 'MIN', 'NE', 'NO', 'NYG', 'NYJ', 'OAK', 'PHI', 'PIT', 'SD', 'SEA', 'SF', 'STL', 'TB', 'TEN', 'WAS']
+
+base_url = 'http://www.footballoutsiders.com/premium/weekByTeam.php?od=O&year={y}&team={t}&week={w}'
+
+for year in years:
+     for week in weeks:
+        for team in teams:
+            url = base_url.format(y=year, w=week, t=team)
+
+            try:
+                filename = 'weekByTeam-{y}_{w}_{t}.csv'.format(y=year, w=week, t=team)
+                r = requests.get(url, cookies = cj)
+                time.sleep(2)
+            except:
+                print 'could not fetch {0}'.format(url)
+
+
+-- homeRoadDVOA
+
+base_url = 'http://www.footballoutsiders.com/premium/homeRoadDvoa.php?od={od}&year={y}&team={t}&week={w}'
+
+sides = ['o', 'd']
+years = range(2000,2016)
+teams = ['ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE', 'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAC', 'KC', 'MIA', 'MIN', 'NE', 'NO', 'NYG', 'NYJ', 'OAK', 'PHI', 'PIT', 'SD', 'SEA', 'SF', 'STL', 'TB', 'TEN', 'WAS']
+
+for year in years:
+        for team in teams:
+            for side in sides:
+                print base_url.format(y=year, w=week, t=team, od=side)
+
+columns = ['team', 'home_dvoa', 'home_rank', 'road_dvoa', 'road_rank', 'total_dvoa', 'total_rank']
+
+-- oneTeamLineYards
+
+base_url = 'http://www.footballoutsiders.com/premium/oneTeamLineYards?od={od}&year={y}&team={t}&week={w}'
+
+sides = ['o', 'd']
+years = range(2000,2016)
+teams = ['ARI', 'ATL', 'BAL', 'BUF', 'CAR', 'CHI', 'CIN', 'CLE', 'DAL', 'DEN', 'DET', 'GB', 'HOU', 'IND', 'JAC', 'KC', 'MIA', 'MIN', 'NE', 'NO', 'NYG', 'NYJ', 'OAK', 'PHI', 'PIT', 'SD', 'SEA', 'SF', 'STL', 'TB', 'TEN', 'WAS']
+
+for year in years:
+        for team in teams:
+            for side in sides:
+                print base_url.format(y=year, w=week, t=team, od=side)
+
+columns = ['year', 'adj_line_yds', 'rank', 'rb_yds', 'rank', 'power_success', 'rank', 'nfl_avg', 'open_field_yds', 'rank', 'nfl_avg', 'sec_level', 'rank', 'nfl_avg', 'stuffed', 'rank', 'nfl_avg', 'adj_sack_rate', 'rank', 'sacks']

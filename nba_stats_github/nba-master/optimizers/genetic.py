@@ -1,0 +1,2 @@
+class NBAGeneticOptimizer(object):
+    pass

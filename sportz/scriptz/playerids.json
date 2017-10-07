@@ -1,0 +1,2 @@
+{"errors":["The season must be a number."]}
+Fatal error: Call to a member function insert() on a non-object in /Users/BC/sportz/scriptz/players.php on line 26

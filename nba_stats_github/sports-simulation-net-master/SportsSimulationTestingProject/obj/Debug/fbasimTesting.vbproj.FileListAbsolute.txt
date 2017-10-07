@@ -1,0 +1,15 @@
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\fbasimTesting.dll
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\fbasimTesting.pdb
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\fbasimTesting.xml
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\fbasim.dll
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\nunit.framework.dll
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\fbasim.pdb
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\fbasim.xml
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\nunit.framework.xml
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\obj\Debug\ClassLibrary1.Resources.resources
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\obj\Debug\fbasimTesting.dll
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\obj\Debug\fbasimTesting.xml
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\obj\Debug\fbasimTesting.pdb

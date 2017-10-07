@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!--This file represents the results of running a test suite-->
+<test-results name="C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\fbasimTesting.dll" total="49" errors="0" failures="1" not-run="0" inconclusive="0" ignored="0" skipped="0" invalid="0" date="2010-07-29" time="16:32:41">
+  <environment nunit-version="2.5.5.10112" clr-version="4.0.30319.1" os-version="Microsoft Windows NT 6.1.7600.0" platform="Win32NT" cwd="C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE" machine-name="SANSBACON-PC" user="sansbacon" user-domain="sansbacon-PC" />
+  <culture-info current-culture="en-US" current-uiculture="en-US" />
+  <test-suite type="Assembly" name="C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\fbasimTesting.dll" executed="True" result="Failure" success="False" time="0.654" asserts="0">
+    <results>
+      <test-suite type="Namespace" name="SportsSimulationTesting" executed="True" result="Failure" success="False" time="0.649" asserts="0">
+        <results>
+          <test-suite type="TestFixture" name="BasePlayerIdTests" executed="True" result="Success" success="True" time="0.041" asserts="0">
+            <results>
+              <test-case name="SportsSimulationTesting.BasePlayerIdTests.New_NoParameters_ReturnsTrue" executed="True" result="Success" success="True" time="0.019" asserts="2" />
+              <test-case name="SportsSimulationTesting.BasePlayerIdTests.New_ValidHash_ReturnsTrue" executed="True" result="Success" success="True" time="0.006" asserts="2" />
+              <test-case name="SportsSimulationTesting.BasePlayerIdTests.New_ValidParameters_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="BasePlayerStatisticalFunctionsTests" executed="True" result="Success" success="True" time="0.055" asserts="0">
+            <results>
+              <test-case name="SportsSimulationTesting.BasePlayerStatisticalFunctionsTests.New_NoParameters_ReturnsTrue" executed="True" result="Success" success="True" time="0.008" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerStatisticalFunctionsTests.PerGame_LookupTotalAndGamesPlayed_ReturnsTrue" executed="True" result="Success" success="True" time="0.010" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerStatisticalFunctionsTests.PerGame_ValidTotalAndGamesPlayed_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerStatisticalFunctionsTests.PerTimePeriod_LookupTotalAndMinutes_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerStatisticalFunctionsTests.PerTimePeriod_ValidTotalAndMinutes_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="BasePlayerTeamSeasonTests" executed="True" result="Success" success="True" time="0.008" asserts="0">
+            <results>
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.AddStat_AddNewStat_ReturnsTrue" executed="True" result="Success" success="True" time="0.003" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.AddStats_AddNewStats_ReturnsTrue" executed="True" result="Success" success="True" time="0.002" asserts="2" />
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.GetStat_GetGames_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.GetStat_GetMinutes_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.GetStat_GetPoints_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.GetStat_GetRebounds_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.New_NoParameters_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.New_StatsParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.New_YearAndStatsParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.New_YearParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.Stats_GetValue_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTeamSeasonTests.Year_GetValue_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="BasePlayerTests" executed="True" result="Success" success="True" time="0.110" asserts="0">
+            <results>
+              <test-case name="SportsSimulationTesting.BasePlayerTests.AddId_ValidId_ReturnsTrue" executed="True" result="Success" success="True" time="0.004" asserts="2" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.AddIds_ValidIds_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.AddSeason_ValidParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.AddSeasons_ValidParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.CareerTotal_ValidStatname_ReturnsTrue" executed="True" result="Success" success="True" time="0.004" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.GetCareer_NoParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.GetIds_NoParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.GetIdsAndSources_NoParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="5" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.GetSeason_ValidSeason_ReturnsTrue" executed="True" result="Success" success="True" time="0.020" asserts="2" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.GetSeasons_PassSeasonsListAndValidSeasonRange_ReturnsTrue" executed="True" result="Success" success="True" time="0.002" asserts="3" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.GetSeasons_ValidSeasonRange_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.GetSources_NoParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="3" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.LastSeason_NoParameters_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.New_NoParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.SeasonRangeTotal_ValidParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="SportsSimulationTesting.BasePlayerTests.SeasonTotal_ValidParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="TestFixture" name="PlayerSeasonTests" executed="True" result="Success" success="True" time="0.030" asserts="0">
+            <results>
+              <test-case name="SportsSimulationTesting.PlayerSeasonTests.AddPlayerTeamSeason_ArrayContainsNewTeamSeason_ReturnsTrue" executed="True" result="Success" success="True" time="0.015" asserts="1" />
+              <test-case name="SportsSimulationTesting.PlayerSeasonTests.AddPlayerTeamSeasons_ArrayContainsNewTeamSeasons_ReturnsTrue" executed="True" result="Success" success="True" time="0.002" asserts="1" />
+              <test-case name="SportsSimulationTesting.PlayerSeasonTests.GetSeasonTotal_ValidStat_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="SportsSimulationTesting.PlayerSeasonTests.New_NoTeamSeasons_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+              <test-case name="SportsSimulationTesting.PlayerSeasonTests.New_ValidYear_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="SportsSimulationTesting.PlayerSeasonTests.PerGame_ValidTotalAndGamesPlayed_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+              <test-case name="SportsSimulationTesting.PlayerSeasonTests.PerTimePeriod_ValidTotalAndMinutes_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+            </results>
+          </test-suite>
+          <test-suite type="Namespace" name="PlayerTests" executed="True" result="Failure" success="False" time="0.380" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="Base" executed="True" result="Failure" success="False" time="0.364" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="BasePlayerXMLTests" executed="True" result="Failure" success="False" time="0.363" asserts="0">
+                    <results>
+                      <test-case name="SportsSimulationTesting.PlayerTests.Base.BasePlayerXMLTests.LoadBioFromXML_ValidParameters_ReturnsTrue" executed="True" result="Success" success="True" time="0.281" asserts="1" />
+                      <test-case name="SportsSimulationTesting.PlayerTests.Base.BasePlayerXMLTests.LoadStatsFromXML_ValidParameters_ReturnsTrue" executed="True" result="Failure" success="False" time="0.042" asserts="1">
+                        <failure>
+                          <message><![CDATA[  Number of seasons not the same.
+  Expected: 2
+  But was:  0
+]]></message>
+                          <stack-trace><![CDATA[at SportsSimulationTesting.PlayerTests.Base.BasePlayerXMLTests.LoadStatsFromXML_ValidParameters_ReturnsTrue() in C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\PlayerTests\BasePlayerTests\BasePlayerXMLTests.vb:line 45
+]]></stack-trace>
+                        </failure>
+                      </test-case>
+                      <test-case name="SportsSimulationTesting.PlayerTests.Base.BasePlayerXMLTests.New_NoParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.000" asserts="1" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+              <test-suite type="Namespace" name="BasePlayerTests" executed="True" result="Success" success="True" time="0.009" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="BasePlayerQueryTests" executed="True" result="Success" success="True" time="0.007" asserts="0">
+                    <results>
+                      <test-case name="SportsSimulationTesting.PlayerTests.BasePlayerTests.BasePlayerQueryTests.Instance_NoParameter_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="SportsSimulationTesting.PlayerTests.BasePlayerTests.BasePlayerQueryTests.QuerySeason_ValidParameters_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="1" />
+                      <test-case name="SportsSimulationTesting.PlayerTests.BasePlayerTests.BasePlayerQueryTests.QuerySeasons_ValidParameters_ReturnsTrue" executed="True" result="Success" success="True" time="0.001" asserts="2" />
+                    </results>
+                  </test-suite>
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+          <test-suite type="Namespace" name="TeamTests" executed="True" result="Inconclusive" success="False" time="0.009" asserts="0">
+            <results>
+              <test-suite type="Namespace" name="BaseTeamTests" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0">
+                <results>
+                  <test-suite type="TestFixture" name="BaseTeamTests" executed="True" result="Inconclusive" success="False" time="0.000" asserts="0" />
+                </results>
+              </test-suite>
+            </results>
+          </test-suite>
+        </results>
+      </test-suite>
+    </results>
+  </test-suite>
+</test-results>

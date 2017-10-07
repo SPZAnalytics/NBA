@@ -1,0 +1,12 @@
+.*.swp
+doc
+MANIFEST
+dist
+wiki
+build
+archlinux
+scripts/poll
+playground
+curien-db
+tags
+TAGS

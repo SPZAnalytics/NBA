@@ -1,0 +1,16 @@
+.idea/
+*.pyc
+.pypirc
+/docs
+/dist
+run.py
+NFL_Draftkings/ConvertToDraftKings.pyc
+NFL_Draftkings/GatherPlayerData.pyc
+NFL_Draftkings/GetPlayerStats.pyc
+NFL_Draftkings/ProcessPlayerStats.pyc
+NFL_Draftkings/constants.pyc
+*.sqlite
+NFL_Draftkings/run.py
+MANIFEST
+.gitconfig
+NFL_Draftkings.egg-info

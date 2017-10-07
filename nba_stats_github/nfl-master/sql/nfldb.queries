@@ -1,0 +1,48 @@
+# nfldb queries
+
+## QB passing stats by week from 2015 season
+
+select g.season_year, g.week, p.full_name, p.team, p.position[1],
+    sum(pp.passing_cmp) as pcmp, sum(pp.passing_att) as patt
+
+from play_player as pp
+inner join
+player as p
+on pp.player_id = p.player_id
+inner join
+game as g
+on pp.gsis_id = g.gsis_id
+
+where pp.gsis_id IN (select gsis_id from game where season_year = 2015)
+group by pp.gsis_id, p.full_name, p.team, p.position, g.season_year, g.week
+having sum(passing_att) > 0
+order by patt DESC
+
+## Combined passing stats
+
+WITH aggwt AS (
+    SELECT
+        gsis_id, player_id, team, sum(passing_cmp) as pcmp, sum(passing_att) as patt
+    FROM
+        play_player
+    WHERE
+        gsis_id in (SELECT gsis_id FROM game WHERE season_type = 'Regular')
+    GROUP BY
+        gsis_id, player_id, team
+)
+
+SELECT
+    aggwt.gsis_id, g.season_year, g.week, aggwt.player_id, p.full_name, aggwt.team,
+    (CASE WHEN aggwt.team = g.home_team THEN g.away_team ELSE g.home_team END) as opp,
+    aggwt.pcmp, aggwt.patt
+
+FROM aggwt
+INNER JOIN player as p ON aggwt.player_id = p.player_id
+INNER JOIN game as g ON aggwt.gsis_id = g.gsis_id
+
+WHERE
+    aggwt.patt > 0
+
+ORDER BY
+    aggwt.patt desc
+

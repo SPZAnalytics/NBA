@@ -1,0 +1,109 @@
+NBA.com lineups API
+
+base_url = 'http://stats.nba.com/stats/leaguedashlineups?'
+
+params = {
+    'Conference': '',
+    'DateFrom': '',
+    'DateTo': '',
+    'Division': '',
+    'GameID': '',
+    'GameSegment': '',
+    'GroupQuantity': '5',
+    'LastNGames': '0',
+    'LeagueID': '00',
+    'Location': '',
+    'MeasureType': 'Base',
+    'Month': '5',
+    'OpponentTeamID': '0',
+    'Outcome': '',
+    'PORound': '0',
+    'PaceAdjust': 'N',
+    'PerMode': 'PerGame',
+    'Period': '0',
+    'PlusMinus': 'N',
+    'Rank': 'N',
+    'Season': '2015-16',
+    'SeasonSegment': '',
+    'SeasonType': 'Regular+Season',
+    'ShotClockRange': '',
+    'TeamID': '1610612742',
+    'VsConference': '',
+    'VsDivision': ''
+}
+
+sample_url = 'http://stats.nba.com/stats/leaguedashlineups?Conference=&DateFrom=&DateTo=&Division=&GameID=&GameSegment=&GroupQuantity=5&LastNGames=0&LeagueID=00&Location=&MeasureType=Base&Month=5&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlusMinus=N&Rank=N&Season=2015-16&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&TeamID=1610612742&VsConference=&VsDivision='
+
+# just a snippet
+
+result_json = '''
+resultSets: [
+{
+name: "Lineups",
+headers: [
+"GROUP_SET",
+"GROUP_ID",
+"GROUP_NAME",
+"TEAM_ID",
+"TEAM_ABBREVIATION",
+"GP",
+"W",
+"L",
+"W_PCT",
+"MIN",
+"FGM",
+"FGA",
+"FG_PCT",
+"FG3M",
+"FG3A",
+"FG3_PCT",
+"FTM",
+"FTA",
+"FT_PCT",
+"OREB",
+"DREB",
+"REB",
+"AST",
+"TOV",
+"STL",
+"BLK",
+"BLKA",
+"PF",
+"PFD",
+"PTS",
+"PLUS_MINUS"
+],
+rowSet: [
+[
+"Lineups",
+"200826 - 202083 - 1717 - 2585 - 202718",
+"Barea,J.J. - Matthews,Wesley - Nowitzki,Dirk - Pachulia,Zaza - Parsons,Chandler",
+1610612742,
+"DAL",
+2,
+0,
+2,
+0,
+12.6,
+11.5,
+21.5,
+0.535,
+3,
+5,
+0.6,
+3,
+4.5,
+0.667,
+1,
+7,
+8,
+6,
+0.5,
+1,
+0.5,
+1,
+3.5,
+4.5,
+29,
+-1.5
+]'''

@@ -1,0 +1,67 @@
+FANTASYDATA.COM scraping
+
+## Draftkings NFL Scoring
+
+http://fantasydata.com/nfl-stats/nfl-fantasy-football-stats.aspx?fs=3&stype=0&sn=0&scope=0&w=0&ew=0&s=&t=0&p=0&st=FantasyPointsDraftKings&d=1&ls=&live=false&pid=false&minsnaps=4
+
+## Draftkings DVP
+
+http://fantasydata.com/nfl-stats/nfl-fantasy-football-points-allowed-defense-by-position.aspx?fs=0&stype=1&sn=0&scope=0&w=0&ew=0&s=&t=0&p=0&st=FantasyPointsDraftKings&d=0&ls=FantasyPointsAllowedAverage&live=false&pid=false&minsnaps=4
+
+//*[@id="StatsGrid"]
+
+import operator
+import requests
+import requests.cache
+
+requests_cache.install_cache('fantasydata.com')
+r = requests.get(url)
+soup = BeautifulSoup(r.text)
+tbl = soup.find('table', {'class': 'StatsGrid'})
+rows = tbl.findAll('tr')
+header_row = rows.pop(0)
+headers = [th.get_text() for th in header_row.findAll('th')]
+
+for row in rows:
+    stats = [td.get_text() for td in row.findAll('td')]
+    teams.append(dict(zip(headers, stats)))
+
+teams.sort(key=operator.itemgetter('Fantasy Points Allowed / Gm'))
+
+## ESPN Fantasy DVP
+
+import operator
+import requests
+import requests.cache
+
+url = 'http://fantasydata.com/nfl-stats/nfl-fantasy-football-points-allowed-defense-by-position.aspx?fs=0&stype=0&sn=0&scope=0&w=0&ew=0&s=&t=0&p=0&st=FantasyPointsAllowedAverage&d=0&ls=FantasyPointsAllowedAverage&live=false&pid=false&minsnaps=4'
+
+requests_cache.install_cache('fantasydata.com')
+r = requests.get(url)
+soup = BeautifulSoup(r.text)
+tbl = soup.find('table', {'class': 'StatsGrid'})
+rows = tbl.findAll('tr')
+header_row = rows.pop(0)
+headers = [th.get_text() for th in header_row.findAll('th')]
+
+for row in rows:
+    stats = [td.get_text() for td in row.findAll('td')]
+    teams.append(dict(zip(headers, stats)))
+
+teams.sort(key=operator.itemgetter('Fantasy Points Allowed / Gm'))
+teams
+
+## FANTASYDATA.COM API
+
+import requests
+
+headers = {'Ocp-Apim-Subscription-Key': '29034b01f8104bbd862ba94815d95043'}
+url = 'https://api.fantasydata.net/nba/v2/json/Players'
+r = requests.get(url, headers=headers)
+print r.text
+
+headers = {'Ocp-Apim-Subscription-Key': 'a14f66f2060a482ca1c74ea11210eada'}
+url = 'https://api.fantasydata.net/nfl/v2/json/Players'
+r = requests.get(url, headers=headers)
+print r.text
+

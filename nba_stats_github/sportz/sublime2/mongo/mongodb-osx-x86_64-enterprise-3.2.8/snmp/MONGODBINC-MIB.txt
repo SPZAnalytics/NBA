@@ -1,0 +1,15 @@
+-- Copyright (C) 2014 MongoDB, Inc.  All Rights Reserved.
+
+MONGODB-MIB DEFINITIONS ::= BEGIN
+
+IMPORTS
+    enterprises
+        FROM RFC1155-SMI;
+
+mongodbInc      OBJECT IDENTIFIER ::= { enterprises 34601 }
+software        OBJECT IDENTIFIER ::= { mongodbInc 1 }
+mongodb         OBJECT IDENTIFIER ::= { software 1 }
+mongod          OBJECT IDENTIFIER ::= { mongodb 1 }
+
+END
+

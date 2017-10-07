@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VisualState xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ShowCheckBoxes="false">
+  <TopNode>[0-1057]C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\fbasimTesting.dll</TopNode>
+  <SelectedNode>[0-1057]C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\fbasimTesting.dll</SelectedNode>
+  <ExcludeCategories>false</ExcludeCategories>
+  <Nodes>
+    <Node UniqueName="[0-1057]C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasimTesting\fbasimTesting\bin\Debug\fbasimTesting.dll" Expanded="true" />
+    <Node UniqueName="[0-1058]SportsSimulationTesting" Expanded="true" />
+    <Node UniqueName="[0-1059]SportsSimulationTesting.PlayerTests" Expanded="true" />
+    <Node UniqueName="[0-1061]SportsSimulationTesting.PlayerTests.Base" Expanded="true" />
+    <Node UniqueName="[0-1060]SportsSimulationTesting.PlayerTests.BasePlayerTests" Expanded="true" />
+    <Node UniqueName="[0-1062]SportsSimulationTesting.TeamTests" Expanded="true" />
+    <Node UniqueName="[0-1063]SportsSimulationTesting.TeamTests.BaseTeamTests" Expanded="true" />
+  </Nodes>
+</VisualState>

@@ -1,0 +1,512 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>El Blimpo Loco - Free Fantasy Football -  ESPN</title>
+<!-- N7-1210:2795--> 
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta property="og:description" content="Play Fantasy Football for free on ESPN! Expert analysis, live scoring, mock drafts, and more." />
+<meta property="og:image" content="http://g.espncdn.com/lm-static/ffl16/images/share.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="ESPN Fantasy Football - Play For Free" />
+<meta name="twitter:image" content="http://g.espncdn.com/s/ffllm/14/images/ffl-twitter-480.png" />
+<meta name="twitter:site:id" content="33615152" />
+<meta name="twitter:app:id:iphone" content="555376968" />
+<meta name="twitter:app:id:ipad" content="555376968" />
+<meta name="twitter:app:id:googleplay" content="com.espn.fantasy.lm.football" /><meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache, must-revalidate, proxy-revalidate, maxage=0">
+<meta http-equiv="Expires" content="-1">
+
+
+		<script type="text/javascript">
+		/* omniture ad tracking v0.1 24Jun08 */
+		var anAds;
+		anAds="";
+		function anPassAds(str) {
+			anAds=anAds?anAds+",ads;"+str+";;;event38=1":"ads;"+str+";;;event38=1";
+		}
+		</script>
+		
+		<!-- start Mixpanel --><script type="text/javascript">(function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+		for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+		mixpanel.init("6893c4491047e14ee49156ed3f91c9a5");</script><!-- end Mixpanel -->
+		<link rel="stylesheet" href="http://a.espncdn.com/combiner/c?css=fantasy_reset.r1.css,base.r234.css,modules.r422.css,global_header.r38.css,modules/global_nav.r52.css,modules/insider_enhanced.200910131831.css,registration/facebook.button.v2.css,modules/browser-alert.r7.css,universal_overlay/universal_overlay.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="http://a.espncdn.com/legacy/transitionalHeader/1.0.18/css/transitional-header.css" type="text/css" media="screen" charset="utf-8">
+<link rel="stylesheet" href="http://a.espncdn.com/combiner/c?css=espn.teams.r3.css" type="text/css" media="screen" charset="utf-8">
+<style type="text/css">
+#content{width:990px !important;}
+#header{width:990px !important;}
+#nav-wrapper-container{width:990px !important;}
+#nav-main ul.top li .wrapper{width:984px !important;}
+#content.container { padding: 0; }
+</style>
+<style type="text/css">
+</style>
+
+<link rel="stylesheet" type="text/css" href="http://g.espncdn.com/ffl/static/css/main?v=31139102711">
+<link rel="stylesheet" type="text/css" href="http://g.espncdn.com/ffl/static/css/everyDay?v=442">
+<script src="http://a.espncdn.com/legacy/desktop/1.0.9/js/fantasy-critical.js"></script>
+<script src="https://cdn.registerdisney.go.com/v2/outer/DisneyID.js"></script><script>window.did=DisneyID.get({clientId:"ESPN-FANTASYLM", cssOverride:"https://secure.espncdn.com/combiner/c?css=disneyid/core.css,disneyid/fantasy.css", responderPage:"https://www.espn.com/login/responder/", migrationResponderPage:"https://gone.espn.go.com/login/responder/", blueCookie:true});</script>
+<script><!-- these are the vars for setting the kvps -->var ad_site="espn.us.com.games",ad_zone="football",ad_kvps="pgn=ClubhouseElBlimpoLoco;pgtyp=clubhouse;lang=en;gm=ffl;mnr=f;swid={7883CE4B-B2E7-11D2-9B36-00A0C9862BBB};",ad_swid="",ad_counter=1,ad_ord=Math.floor(9999999999*Math.random()),ad_seg="",ad_mnr=-1<document.cookie.indexOf("grif=1")?"t":"f",ad_ref="other",ad_sp="ffl",ad_pgtyp="clubhouse",ad_pgn="ElBlimpoLoco",ref=document.referrer,refsMap={"facebook.com":"facebook","twitter.com|t.co":"twitter","plus.url.google.com|plus.google.com":"googleplus","google.com":"google","bing.com":"bing","yahoo.com":"yahoo","www.espn.com":"espn"},refKey;for(refKey in refsMap)ref.match(refKey)&&(ad_ref=refsMap[refKey]);ad_kvps=ad_kvps+"ref="+ad_ref+";mnr="+ad_mnr+";";var ad_u="";null!=ad_swid&&""!=ad_swid&&(ad_u="swid="+ad_swid+";");	
+	var siteProp = "GRMC88";
+	var apiURL = "http://sds.livesegmentservice.com/segments?prop="+siteProp+"&swid=%7B7883CE4B-B2E7-11D2-9B36-00A0C9862BBB%7D";
+	var adsExternalJs = "http://a.espncdn.com/combiner/c/22?js=espn-ads-external.js";
+	
+	jQuery.ajax({ url: apiURL, success: 
+			function(res) { 
+				var kvps = 'pgn=ClubhouseElBlimpoLoco;pgtyp=clubhouse;lang=en;gm=ffl;mnr=f;swid={7883CE4B-B2E7-11D2-9B36-00A0C9862BBB};&lssegs=';
+				if(res.lssegs) {
+					for(i = 0; i < res.lssegs.length; i++) {
+						kvps += res.lssegs[i] + ','
+					}
+					ad_kvps = kvps.slice(0,-1); // remove trailing comma	
+				} else {
+					ad_kvps = kvps;
+				}
+				ad_site="espn.us.com.games";
+				ad_pgtyp="football";
+				jQuery.getScript(adsExternalJs);
+			}
+		}
+	);
+	
+  </script>
+  <!-- end of kvp setting for ads --><script src="http://g.espncdn.com/lm-static/libs/prototype/1.6.0.2/prototype.js"></script>
+<script type="text/javascript">
+
+com = { espn: {
+	env: {
+		av: navigator.appVersion,
+		ua: navigator.userAgent,
+		an: navigator.appName,
+		platform: navigator.platform,
+		IE: "Microsoft Internet Explorer",
+		NS: "Netscape",
+		MAC: "MacPPC",
+
+		host: "games.espn.com",
+		context: "clubhouse"
+	},
+	listeners: {},
+	games: {
+		gameRoot: "ffl",
+		leagueId: 302946,
+		seasonId: 2016,
+		toTeamId: 7,
+		fromTeamId: 12,
+		scoringPeriodId: 1,
+		currentScoringPeriodId: 1,
+		leagueType: 0
+	}
+}};
+
+com.espn.games.isLeagueManager = false;com.espn.games.isLeagueCreator = false;com.espn.games.isLeagueMember = true;com.espn.games.userLoggedIn = true;com.espn.games.username = 'eric_truett';
+var GAMEROOT = "ffl";var host = location.hostname;var gameRoot = "ffl";var leagueId = 302946;var teamId = 12;</script><script type="text/javascript" src="http://g.espncdn.com/ffl/static/js/libraries?v=517525"></script>
+<script type="text/javascript" src="http://g.espncdn.com/ffl/static/js/everyDay?v=13162332"></script>
+<script type="text/javascript">
+
+
+function dkTrack(linkGroup) {
+	if(linkGroup && callOmniture) {
+		var linkId = 'DraftKings:' + 'FFL-' + linkGroup;
+
+		s_omni.linkTrackVars += ",eVar74";
+		s_omni.usePlugins=false; // otherwise prop9 gets overridden
+		s_omni.eVar74= s_omni.prop9 = linkId;
+
+		s_omni.trackLink(event.currentTarget, 'e', '');
+		event.stopImmediatePropagation();
+
+		// reset vars
+		s_omni.usePlugins=true;
+		s_omni.eVar74 = s_omni.prop9 = '';
+	}
+}</script>
+<script type="text/javascript"></script>
+<link rel="alternate" title="League Feed" href="/ffl/leaguefeed?leagueId=302946&teamId=7" type="application/rss+xml">
+<meta name="apple-itunes-app" content="app-id=555376968"><meta property="al:ios:url" content="espnffl://applinks"><meta property="al:ios:app_store_id" content="555376968"><meta property="al:ios:app_name" content="ESPN Fantasy Football"><meta property="al:android:url" content="espnffl://applinks"><meta property="al:android:package" content="com.espn.espnfantasyfootball"><meta property="al:android:app_name" content="ESPN Fantasy Football">
+		<script type="text/javascript">
+			/* Redirect to an alternate version of the page */
+			(function(){
+				if (!document.querySelectorAll || !window.matchMedia) return false;
+				var links = document.querySelectorAll('link[rel="alternate"][type="text/html"][media][href]');
+				for (var l=links.length-1; l>=0; --l) {
+					if (window.matchMedia(links[l].getAttribute('media')).matches) {
+						window.location = links[l].getAttribute('href');
+					}
+				}
+			})();
+		</script>
+</head><body class="trans-fantasy context-clubhouse games-ad-300 transitional">
+
+<div class="ad-slot ad-slot-exclusions" data-slot-type="exclusions" data-slot-kvps="pos=exclusions"></div><!--[if IE 6]><div class="ie ie6"><![endif]-->
+<!--[if IE 7]><div class="ie ie7"><![endif]-->
+<!--[if IE 8]><div class="ie ie8"><![endif]-->
+<div class="bg-elements">
+<table class="maincontainertbl" cellpadding="0" cellspacing="0"><tr><td class="maincontainertblcell" valign="top" id="maincontainertblcell"><div id="header" class="container">
+</div>
+<script type="text/javascript">
+			// load new edition settings
+			var espn = espn || {};
+			espn.i18n = espn.i18n || {};
+			espn.i18n.lang = "en";
+			espn.i18n.siteId = "1";
+			espn.i18n.site = "espn";
+			espn.i18n.editionKey = "espn-en";
+			espn.i18n.personalization = true;
+			espn.i18n.country = "us";
+			espn.i18n.domain = "www.espn.com";
+			espn.i18n.searchUrl = "http://search.espn.com/";
+			espn.i18n.hasSearch = true;
+			espn.i18n.nowFeed = true;
+			espn.i18n.temperature = {scale: "fahrenheit", symbol: "&deg; F" };
+			espn.i18n.facebook = {appId: "116656161708917", locale: "en_US" };
+			espn.i18n.outbrain = {"mobile":{"compliantId":"MB_4","nonCompliantId":"MB_5"},"desktop":{"compliantId":"AR_15","nonCompliantId":"AR_12"},"video":{"mobile":{"compliantId":"MB_6"},"desktop":{"compliantId":"AR_16"}},"recap":{"mobile":{"compliantId":"MB_9"},"desktop":{"compliantId":"AR_30"}}}
+			espn.i18n.betting = {show: true, provider: ""};
+			espn.i18n.ticketsEnabled = true;
+			espn.i18n.translations = {};
+			espn.i18n.environment = "prod";
+			espn.i18n.sportBranding = {"cricket":"logos/logo-uk-cricinfo.png","soccer":"logos/logo-uk-fc.png","rugby":"logos/logo-uk-scrum.png","ncaaw":"logos/ESPNcom-powerby-espnw.png","ncw":"logos/ESPNcom-powerby-espnw.png","wnba":"logos/ESPNcom-powerby-espnw.png","womenbb":"logos/ESPNcom-powerby-espnw.png"};
+			espn.i18n.sportToUrl = {"cricket":"http://www.espncricinfo.com","soccer":"http://www.espnfc.us","ncaaw":"http://espnw.com","ncw":"http://espnw.com","wnba":"http://espnw.com","womenbb":"http://espnw.com"};
+			espn.i18n.showWatch = true;
+			
+			espn.i18n.showFCContent = false;
+			espn.i18n.showCricInfoContent = false;
+			espn.i18n.showInsider = true;
+			espn.i18n.indexAutoStart = false;
+			espn.i18n.customPrimaryNav = false;
+			espn.i18n.sportReplacements = {};
+
+			espn.i18n.uriRewrites = {"paramKeys":{"toEdition":{},"toEnglish":{}},"pathSegments":{"toEdition":{},"toEnglish":{}},"urls":{"toEdition":{},"toEnglish":{}},"roots":{"toEdition":{"/womenbb/":"/womens-basketball/","/ncaa/":"/college-sports/","/ncb/":"/mens-college-basketball/","/ncf/":"/college-football/","/flb/":"/fantasy/baseball/","/fhl/":"/fantasy/hockey/","/horse/":"/horse-racing/","/nascar/":"/racing/nascar/","/fba/":"/fantasy/basketball/","/rpm/":"/racing/","/oly/":"/olympics/","/ffl/":"/fantasy/football/"},"toEnglish":{"/womens-basketball/":"/womenbb/","/newyork/":"/new-york/","/fantasy/basketball/":"/fba/","/college-football/":"/ncf/","/womens-college-basketball/":"/ncw/","/sports/horse/":"/horse/","/gymnastics/":"/oly/","/sports/endurance/":"/endurance/","/fantasy/football/":"/ffl/","/oly/summer/cycling/":"/oly/summer/cycling/","/olympics/":"/oly/","/mens-college-basketball/":"/ncb/","/sports/womenbb/":"/womenbb/","/fantasy/baseball/":"/flb/","/mens-college-basketball/rumors":"/mens-college-basketball/rumors","/oly/summer/gymnastics/":"/oly/summer/gymnastics/","/horse-racing/":"/horse/","/fantasy/hockey/":"/fhl/","/espn/onenacion/":"/onenacion/","/college-sports/":"/ncaa/","/losangeles/":"/los-angeles/","/skiing/":"/oly/","/cycling/":"/oly/","/racing/":"/rpm/","/racing/nascar/":"/nascar/","/college-football/rumors":"/college-football/rumors","/figure-skating/":"/oly/"}},"paramValues":{"toEdition":{},"toEnglish":{}}};
+
+			try {
+				//find way to double encode
+				var translations = {"year.mobile.filters":"year","removedFromYourFavorites":"<p>You've removed<\/p><h1>${title}<\/h1>${subTitle}<p>as a suggested favorite<\/p>","preferences.sport_labels.700":"Barclays Premier League","heliumdown":"Login Temporarily Unavailable","newsletters":"Newsletters","preferences.sport_labels.850":"Tennis","no":"No","pageTitle.Scores_%{leagueOrSport}":"${leagueOrSport} Scores","score":"Score","preferences.sport_labels.46":"NBA","message.leaguemanager":"Message LM","favoritesmgmt.manualSortSelected":"You have chosen to manually order how your favorites will appear across ESPN products. At any time, you may return to having ESPN order your favorites by selecting the \"Auto\" option.","onefeed.suggested":"Suggested Favorites","favoritesmgmt.favoriteEntity":"${entity} - Favorite","preferences.sport_labels.41":"NCAAM","manageSettingInPersonalSettings":"You can manage this setting in the future under your <a href=\"#\">Personal Settings<\/a>","hide":"Hide","search":"Search","preferences.sport_labels.1700":"Track and Field","welcomeToESPN":"Welcome to the new ESPN.com","tweet":"Tweet","to_be_determined.abbrev":"TBD","favoriteadded":"Favorite Added","over/under.abbrev":"O/U","preferences.sport_labels.8300":"College Sports","preferences.sport_labels.5501":"FIFA Club World Cup","move":"Move","preferences.sport_labels.3700":"Olympic Sports","preferences.sport_labels.8319":"Snooker","alert":"Alert","preferences.sport_labels.8318":"Darts","favoritesmgmt.confirmHideFavorite":"Hide this from my favorites?","preferences.sport_labels.59":"WNBA","season.mobile.filters":"season","reactivate":"Reactivate","position.abbrev":"POS","favoritesmgmt.alertType":"Alert Type","preferences.sport_labels.54":"NCAAW","createAccount":"Sign Up","viewall":"View All","favoritesmgmt.suggestedHeader":"Suggestions for your location","home":"Home","footerText":"ESPN Internet Ventures. <a href=\"http://disneytermsofuse.com/\" rel=\"nofollow\">Terms of Use<\/a>, <a href=\"http://disneyprivacycenter.com/\" rel=\"nofollow\">Privacy Policy<\/a>, <a href=\"https://disneyprivacycenter.com/notice-to-california-residents/\" rel=\"nofollow\">Your California Privacy Rights<\/a>, <a href=\"https://disneyprivacycenter.com/kids-privacy-policy/english/\">Children's Online Privacy Policy<\/a> and <a href=\"http://preferences-mgr.truste.com/?type=espn&affiliateId=148\">Interest-Based Ads<\/a> are applicable to you. All rights reserved.<\/span><span class=\"link-text-short\">Footer<\/span>","remove":"Remove","preferences.sport_labels.3918":"English FA Cup","preferences.sport_labels.28":"NFL","preferences.sport_labels.3301":"MMA","opponent.abbrev":"OPP","preferences.sport_labels.1650":"Wrestling","preferences.sport_labels.23":"NCAAF","subscribe":"Subscribe","preferences.sport_labels.1200":"Horse Racing","pop-out":"Pop-out","inprogress":"In Progress","connectedfacebook":"Connected to Facebook","manageMy":"Manage my","disableVideoDockingPermanently":"Disable video docking permanently","preferences.sport_labels.3520":"Poker","suggested":"Suggested","insider.pickcenter.login_message":"To get exclusive PickCenter analysis, you must be an ESPN Insider","preferences.sport_labels.3920":"English Capital One Cup","yes":"Yes","register":"Register","preferences.sport_labels.1000":"Boxing","preferences.sport_labels.33":"CFL","preferences.sport_labels.8098":"X Games","reset.mobile.filters":"reset","favorites.tooManyTeamsToAdd":"Maximum favorite teams limit reached. Please remove at least one team prior to adding additional teams.","Soccer Scores":"Football Scores","confirm":"Confirm","onefeed.scheduleDraft":"Schedule Draft","comments":"Comments","viewAllResultsBySearchTerm":"View all results for '${search_term}'","insiderSubscription":"Insider Subscription","favoritesmgmt.suggestedHeaderReset":"Suggestions","purse":"Purse","undo":"Undo","manageFavoritesSignIn":"To manage favorites please sign-in or create an ESPN account","sports":"Sports","show":"Show","cancel":"Cancel","accountInformation":"Account Information","preferences.sport_labels.2030":"Formula 1","resize":"Resize","nflBye":"Bye","close":"Close","redesignWelcomeText":"We've redesigned the site with some new and exciting features. You have been selected as part of a limited set of fans who get to experience our new site and give it feedback before it launches!","favoritesmgmt.reorderSports":"Reorder Sports","scores":"Scores","thingsHaveChanged":"As you may notice, things have definitely changed","favoritesmgmt.noFavorites":"You have not chosen any favorites yet","preferences.sport_labels.3170":"College Sports","thereAreNoEventsByDisplayNameByDate":"There are no ${displayName} events for ${readableDate}","preferences.sport_labels.800":"Field Hockey","signOut":"Log Out","onefeed.draft":"Draft","filter.mobile.filters":"filter","videoSettings":"Video Settings","favorites.draftingNow":"Drafting Now","noTeamsInFavorites":"No teams in your favorites yet","preferences.sport_labels.90":"NHL","enter":"Enter","preferences.sport_labels.2020":"NASCAR","favorites":"Favorites","onefeed.insider.manage":"Manage","welcometext":"Welcome","submit.mobile.filters":"submit","email":"Email","favorites.streakLabel":"Current Streak:","pts":"Pts","favoritesmgmt.sportTeam":"${sportLabel} Team","preferences.sport_labels.10":"MLB","onefeed.draftNow":"Draft Now","preferences.sport_labels.200":"Cricket","preferences.sport_labels.770":"MLS","preferences.sport_labels.1300":"Cycling","preferences.sport_labels.775":"UEFA Champions League","preferences.sport_labels.300":"Rugby","today":"Today","preferences.sport_labels.776":"UEFA Europa League","add":"Add","preferences.sport_labels.8367":"esports","videoDockingDisabled":"Video docking disabled","connectfacebook":"Connect with Facebook","facebook.conversation.account_policy":"Use a <a href=\"https://www.facebook.com/r.php\" rel=\"nofollow\">Facebook account<\/a> to add a comment, subject to Facebook's <a href=\"https://www.facebook.com/policies/\" rel=\"nofollow\">Terms of Service<\/a> and <a href=\"https://www.facebook.com/about/privacy/\" rel=\"nofollow\">Privacy Policy<\/a>. Your Facebook name, photo & other personal information you make public on Facebook will appear with your comment, and may be used on ESPN's media platforms. <a href=\"http://espn.com/espn/story/_/id/8756098/espn-facebook-comments-faq\">Learn more<\/a>.","earnings":"Earnings","preferences.sport_labels.781":"European Championship","addSomeForQuickAccess":"Add some for quick access","preferences.sport_labels.2000":"Racing","preferences.sport_labels.2040":"IndyCar","activateInsider":"Activate Insider","favoritesmgmt.noSuggestedFavorites":"Additional Suggested Favorites are not available at this time","favoritesmgmt.confirmRemoveFavorite":"Remove Favorite?","addfavorite":"Add Favorite","preferences.sport_labels.606":"Football","signIn":"Log In","preferences.sport_labels.8374":"Kabaddi","preferences.sport_labels.8373":"Badminton","addFavorites":"Add favorites","preferences.sport_labels.600":"Soccer","preferences.sport_labels.8372":"Chess","preferences.sport_labels.1106":"Golf"};
+				if(Object.keys(translations).length > 0) {
+					espn.i18n.translations = translations;
+				}
+			} catch (err) {
+				window.console.log('Error in espn.i18n loading translations', err);
+			}
+
+			espn.i18n.dateTime = {
+				dateFormats: {
+					time1: "h:mm A",
+					date1: "MMM D, YYYY",
+					date2: "M/D/YYYY",
+					date3: "MM/DD/YYYY",
+					date4: "MMDDYYYY",
+					date5: "MMMM Do YYYY",
+					date6: "dddd, MMMM Do YYYY",
+					date7: "ddd, MMM D YYYY",
+					date8: "M/D",
+					date9: "ddd",
+					date10: "dddd, MMMM Do",
+					date11: "ddd, MMMM D",
+					date12: "MMMM D, YYYY",
+					date13: "dddd, M/D",
+					date14: "MMM D",
+					date15: "ddd, M/D"
+
+				},
+
+				
+				firstDayOfWeek: "Sunday",
+				timeZoneBucket: "America/New_York",
+				dayNamesShort: ["Su","Mo","Tu","We","Th","Fr","Sa"],dayNamesMedium: ["Sun","Mon","Tues","Wed","Thu","Fri","Sat"],
+
+dayNamesLong: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+
+monthNamesShort: ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"],
+
+monthNamesLong: ["January","February","March","April","May","June","July","August","September","October","November","December"]
+			};
+
+		</script><div id="global-viewport" data-behavior="global_nav_condensed global_nav_full"  class =" interior" >
+
+<nav id="global-nav-mobile" data-loadtype="server">
+</nav><div class="menu-overlay-primary"></div><div id="header-wrapper" data-behavior="global_header">
+<header id="global-header" class="espn-en user-account-management has-search">
+    <div class="menu-overlay-secondary"></div>
+
+	<div class="container">
+		<a id="global-nav-mobile-trigger" href="#" data-route="false"><span>Menu</span></a><h1><a href="http://www.espn.com"  name="&lpos=sitenavdefault&lid=sitenav_main-logo">ESPN</a></h1>
+		<ul class="tools">
+			
+			<li class="search">
+<a href="#" class="icon-font-after icon-search-solid-after" id="global-search-trigger"></a>
+<div id="global-search" class="global-search">
+	<input type="text" class="search-box" placeholder="Search Sports, Teams or Players..."><input type="submit" class="btn-search">
+</div></li>
+			
+			
+			<li class="user" data-behavior="favorites_mgmt"></li>
+			
+			<li><a href="#" id="global-scoreboard-trigger" data-route="false">Scores</a></li>
+		</ul>
+		
+
+	</div>
+
+	
+<nav id="global-nav" data-loadtype="server">
+<ul itemscope="" itemtype="http://www.schema.org/SiteNavigationElement">
+<li itemprop="name"><a itemprop="url" href="http://www.espn.com/nfl/">NFL</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/nba/">NBA</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/mlb/">MLB</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/college-football/">NCAAF</a></li><li itemprop="name"><a itemprop="url" href="http://espnfc.com/">Soccer</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/tennis/">Tennis</a></li><li itemprop="name"><a itemprop="url" href="#">&hellip;</a><div><ul class="split"><li itemprop="name"><a itemprop="url" href="http://www.espn.com/nhl/">NHL</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/golf/">Golf</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/mma/">MMA</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/wwe/">WWE</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/moresports/story/_/page/LittleLeagueWorldSeries/little-league-world-series-espn">LLWS</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/mens-college-basketball/">NCAAM</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/esports/">esports</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/chalk/">Chalk</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/racing/nascar/">NASCAR</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/olympics/">Rio 2016</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/racing/">Racing</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/extra/specialolympics/">Special Olympics</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/college-sports/">NCAA</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/womens-basketball/">NCAAW</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/horse-racing/">Horse</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/boxing/">Boxing</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/womens-basketball/">WNBA</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/college-sports/football/recruiting/">RN FB</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/college-sports/basketball/recruiting/index">RN BB</a></li><li itemprop="name"><a itemprop="url" href="http://espncricinfo.com/">Cricket</a></li><li itemprop="name"><a itemprop="url" href="http://www.espnscrum.com/">Rugby</a></li><li itemprop="name"><a itemprop="url" href="http://xgames.com/">X Games</a></li><li itemprop="name"><a itemprop="url" href="http://www.espn.com/endurance/">Endurance</a></li><li itemprop="name"><a itemprop="url" href="http://www.tsn.ca/cfl">CFL</a></li></ul></div></li><li class="pillar more-espn"><a href="#">More ESPN</a></li><li class="pillar fantasy"><a href="http://www.espn.com/fantasy/">Fantasy</a></li><li class="pillar listen"><a href="http://www.espn.com/espnradio/index">Listen</a></li><li class="pillar watch"><a href="http://www.espn.com/watchespn/index">Watch</a></li></ul>
+
+</nav>
+
+
+
+
+<nav id="global-nav-secondary" data-loadtype="tier-2-server" >
+<div class="global-nav-container">
+<ul class="first-group"><li class="sports" itemprop="name"><span class="positioning"><a href="http://www.espn.com/fantasy/football/"><span class="brand-logo icon-logo icon-font-before icon-fantasy-football-solid-before"><img src="http://a.espncdn.com/combiner/i?img=/i/teamlogos/soccer/500/default-team-logo-500.png&w=100&h=100"></span><span class="link-text">Fantasy Football</span></a></span></li><li class="sub"><a href="http://www.espn.com/fantasy/football/"  data-mobile="false" ><span class="link-text">Home</span><span class="link-text-short">Home</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/livedraftlobby?ex_cid=FFL2016_FFLSubnav" ><span class="link-text">Draft Now</span><span class="link-text-short">Draft Now</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/welcome/createleague?ex_cid=FFL2016_FFLSubnav" ><span class="link-text">Create a League</span><span class="link-text-short">Create a League</span></a></li><li class="sub"><a href="http://www.espn.com/fantasy/football/story/_/page/draftkitindex/fantasy-football-draft-kit-espn-2016-rankings-mock-drafts-sleepers-more" ><span class="link-text">Draft Kit</span><span class="link-text-short">Draft Kit</span></a></li><li class="sub"><a href="http://www.espn.com/fantasy/football/story/_/id/16287927/2016-fantasy-football-rankings-top-300" ><span class="link-text">Rankings</span><span class="link-text-short">Rankings</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/livedraftresults" ><span class="link-text">ADP</span><span class="link-text-short">ADP</span></a></li><li class="sub"><a href="http://games.espn.com/nfl-pigskin-pickem/2016/en/" ><span class="link-text">Pigskin Pick'em</span><span class="link-text-short">Pigskin Pick'em</span></a></li><li class="sub has-sub sub-more-more"><a href="#"  data-placeholder="more"  data-breakpoints="tablet,desktop,desktop-lg" ><span class="link-text">More</span><span class="link-text-short">More</span></a><div><ul class="split"><li class="sub external"><a href="http://support.espn.com/en_US/Fantasy-Football" ><span class="link-text">Help</span><span class="link-text-short">Help</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/tools/projections?display=alt"  data-mobile="false" ><span class="link-text">Projections</span><span class="link-text-short">Projections</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/resources/playernews"  data-mobile="false" ><span class="link-text">Player News</span><span class="link-text-short">Player News</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/mockdraftlobby"  data-mobile="false" ><span class="link-text">Mock Draft Lobby</span><span class="link-text-short">Mock Draft Lobby</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/leaders?"  data-mobile="false" ><span class="link-text">Scoring Leaders</span><span class="link-text-short">Scoring Leaders</span></a></li><li class="sub"><a href="http://insider.espn.com/blog/fantasy-football" ><span class="link-text">Daily Fantasy Strategy</span><span class="link-text-short">Daily Fantasy Strategy</span></a></li><li class="sub"><a href="http://www.espn.com/fantasy/football/story/_/id/17173370/fantasy-football-rb-depth-chart-2016" ><span class="link-text">RB Depth Chart</span><span class="link-text-short">RB Depth Chart</span></a></li><li class="sub"><a href="http://www.espn.com/fantasy/football/story/_/page/consistency2015/final-2015-fantasy-football-consistency-ratings" ><span class="link-text">Consistency Ratings</span><span class="link-text-short">Consistency Ratings</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/pointsagainst?"  data-mobile="false" ><span class="link-text">Points Against</span><span class="link-text-short">Points Against</span></a></li><li class="sub"><a href="http://www.espn.com/mobile/products/products?id=8244799"  data-mobile="false" ><span class="link-text">Apps</span><span class="link-text-short">Apps</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/tools/undroppables" ><span class="link-text">Undroppables</span><span class="link-text-short">Undroppables</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/tools/statcorrections"  data-mobile="false" ><span class="link-text">Stat Corrections</span><span class="link-text-short">Stat Corrections</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/resources/leaderboard?"  data-mobile="false" ><span class="link-text">Leaderboard</span><span class="link-text-short">Leaderboard</span></a></li><li class="sub insider"><a href="http://insider.espn.go.com/insider/fantasy/football/valuecalculator"  data-mobile="false" ><span class="link-text">Dollar Value Generator</span><span class="link-text-short">Dollar Value Generator</span></a></li><li class="sub insider"><a href="http://insider.espn.go.com/insider/fantasy/football/draftengine"  data-mobile="false" ><span class="link-text">Draft Engine</span><span class="link-text-short">Draft Engine</span></a></li><li class="sub"><a href="http://games.espn.com/ffl/content?page=fflrulesindex2016"  data-mobile="false" ><span class="link-text">Rules</span><span class="link-text-short">Rules</span></a></li></ul></div></li></ul>
+	<script type="text/javascript">
+		var espn = espn || {};
+		espn.nav = espn.nav || {};
+		espn.nav.navId = 11929946;
+		espn.nav.isFallback = false;
+		
+			espn.nav.tier2 = {"subNavMenu":{"fallback":false,"navigation":{"title":"Fantasy Football Subnav","items":[{"title":"FFL Home","links":[{"text":"Home","isPremium":false,"shortText":"Home","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://www.espn.com/fantasy/football/","isExternal":false}],"$ref":"/v2/navigation/12455944"},{"title":"FFL Draft Now","links":[{"text":"Draft Now","isPremium":false,"shortText":"Draft Now","rel":["sub"],"href":"http://games.espn.com/ffl/livedraftlobby?ex_cid=FFL2016_FFLSubnav","isExternal":false}],"$ref":"/v2/navigation/17225824"},{"title":"Create a League","links":[{"text":"Create a League","isPremium":false,"shortText":"Create a League","rel":["sub"],"href":"http://games.espn.com/ffl/welcome/createleague?ex_cid=FFL2016_FFLSubnav","isExternal":false}],"$ref":"/v2/navigation/15414062"},{"title":"Fantasy Teams Nav | Mobile","links":[{"text":"My Teams","isPremium":false,"shortText":"My Teams","rel":["sub"],"attributes":{"pagetype":"index","tab":"1","breakpoints":"mobile"},"href":"/fantasy/?tab=1","isExternal":false}],"$ref":"/v2/navigation/13688986"},{"title":"FFL Draft Kit","links":[{"text":"Draft Kit","isPremium":false,"shortText":"Draft Kit","rel":["sub"],"href":"http://www.espn.com/fantasy/football/story/_/page/draftkitindex/fantasy-football-draft-kit-espn-2016-rankings-mock-drafts-sleepers-more","isExternal":false}],"$ref":"/v2/navigation/13148259"},{"title":"FFL Weekly Rankings","links":[{"text":"Rankings","isPremium":false,"shortText":"Rankings","rel":["sub"],"href":"http://www.espn.com/fantasy/football/story/_/id/16287927/2016-fantasy-football-rankings-top-300","isExternal":false}],"$ref":"/v2/navigation/13672140"},{"title":"FFL Average Draft Position","links":[{"text":"ADP","isPremium":false,"shortText":"ADP","rel":["sub"],"href":"http://games.espn.com/ffl/livedraftresults","isExternal":false}],"$ref":"/v2/navigation/12455875"},{"title":"Pigskin Pick'Em","links":[{"text":"Pigskin Pick'em","isPremium":false,"shortText":"Pigskin Pick'em","rel":["sub"],"href":"http://games.espn.com/nfl-pigskin-pickem/2016/en/","isExternal":false}],"$ref":"/v2/navigation/13388825"},{"title":"Subnav More (Tablet/Desktop/Desktop-lg) - DO NOT EDIT","links":[{"text":"More","isPremium":false,"shortText":"More","rel":["sub"],"attributes":{"placeholder":"more","breakpoints":"tablet,desktop,desktop-lg"},"href":"#","isExternal":false}],"$ref":"/v2/navigation/13148518"},{"title":"Subnav More - DO NOT EDIT","links":[{"text":"More","isPremium":false,"shortText":"More","rel":["sub"],"attributes":{"placeholder":"more","breakpoints":"mobile"},"href":"#","isExternal":false}],"$ref":"/v2/navigation/11494110"},{"title":"Fantasy Support Portal - Help","links":[{"text":"Help","isPremium":false,"shortText":"Help","rel":["sub"],"href":"http://support.espn.com/en_US/Fantasy-Football","isExternal":true}],"$ref":"/v2/navigation/17241092"},{"title":"FFL Projections","links":[{"text":"Projections","isPremium":false,"shortText":"Projections","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://games.espn.com/ffl/tools/projections?display=alt","isExternal":false}],"$ref":"/v2/navigation/12921228"},{"title":"FFL Player News","links":[{"text":"Player News","isPremium":false,"shortText":"Player News","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://games.espn.com/ffl/resources/playernews","isExternal":false}],"$ref":"/v2/navigation/12455894"},{"title":"FFL Mock Draft Lobby","links":[{"text":"Mock Draft Lobby","isPremium":false,"shortText":"Mock Draft Lobby","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://games.espn.com/ffl/mockdraftlobby","isExternal":false}],"$ref":"/v2/navigation/12887018"},{"title":"FFL Scoring Leaders","links":[{"text":"Scoring Leaders","isPremium":false,"shortText":"Scoring Leaders","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://games.espn.com/ffl/leaders?","isExternal":false}],"$ref":"/v2/navigation/12455915"},{"title":"FFL DFS Blog","links":[{"text":"Daily Fantasy Strategy","isPremium":false,"shortText":"Daily Fantasy Strategy","rel":["sub"],"href":"http://insider.espn.com/blog/fantasy-football","isExternal":false}],"$ref":"/v2/navigation/13674104"},{"title":"FFL Nav RB Chart","links":[{"text":"RB Depth Chart","isPremium":false,"shortText":"RB Depth Chart","rel":["sub"],"href":"http://www.espn.com/fantasy/football/story/_/id/17173370/fantasy-football-rb-depth-chart-2016","isExternal":false}],"$ref":"/v2/navigation/13370583"},{"title":"FFL Consistency Ratings","links":[{"text":"Consistency Ratings","isPremium":false,"shortText":"Consistency Ratings","rel":["sub"],"href":"http://www.espn.com/fantasy/football/story/_/page/consistency2015/final-2015-fantasy-football-consistency-ratings","isExternal":false}],"$ref":"/v2/navigation/13773565"},{"title":"FFL Points Against","links":[{"text":"Points Against","isPremium":false,"shortText":"Points Against","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://games.espn.com/ffl/pointsagainst?","isExternal":false}],"$ref":"/v2/navigation/12455907"},{"title":"FFL Apps","links":[{"text":"Apps","isPremium":false,"shortText":"Apps","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://www.espn.com/mobile/products/products?id=8244799","isExternal":false}],"$ref":"/v2/navigation/12455912"},{"title":"FFL Undroppables","links":[{"text":"Undroppables","isPremium":false,"shortText":"Undroppables","rel":["sub"],"href":"http://games.espn.com/ffl/tools/undroppables","isExternal":false}],"$ref":"/v2/navigation/12455908"},{"title":"FFL Stat Corrections","links":[{"text":"Stat Corrections","isPremium":false,"shortText":"Stat Corrections","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://games.espn.com/ffl/tools/statcorrections","isExternal":false}],"$ref":"/v2/navigation/12455880"},{"title":"FFL Leaderboard","links":[{"text":"Leaderboard","isPremium":false,"shortText":"Leaderboard","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://games.espn.com/ffl/resources/leaderboard?","isExternal":false}],"$ref":"/v2/navigation/12455853"},{"title":"FFL Dollar Value Generator","links":[{"text":"Dollar Value Generator","isPremium":true,"shortText":"Dollar Value Generator","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://insider.espn.go.com/insider/fantasy/football/valuecalculator","isExternal":false}],"$ref":"/v2/navigation/12455852"},{"title":"FFL Draft Engine","links":[{"text":"Draft Engine","isPremium":true,"shortText":"Draft Engine","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://insider.espn.go.com/insider/fantasy/football/draftengine","isExternal":false}],"$ref":"/v2/navigation/13376929"},{"title":"FFL Rules","links":[{"text":"Rules","isPremium":false,"shortText":"Rules","rel":["sub"],"attributes":{"mobile":"false"},"href":"http://games.espn.com/ffl/content?page=fflrulesindex2016","isExternal":false}],"$ref":"/v2/navigation/12455847"}],"links":[{"text":"Fantasy Football","isPremium":false,"shortText":"Fantasy Football","rel":["sports"],"attributes":{"icon":"fantasy-football","abbrev":"ffl"},"href":"http://www.espn.com/fantasy/football/","isExternal":false}],"$ref":"/v2/navigation/12405632","attributes":{"root":"ffl"}},"navId":12405632}};
+		
+		
+
+	</script>
+</div>
+</nav>
+
+</header></div></div><div id="subheader"><div id="content-wrapper">
+<div id="content" class="container">
+<div>
+
+<!--[if lte IE 6]>
+<div class="span-6" id="browser-alert-wrapper" style="display: none;">
+	<div class="mod-container mod-no-header-footer browser-alert">
+		<div class="mod-content">
+			<div class="gradient-container">
+				<h1><span>Your Web Browser</span> is no longer supported</h1>
+				<p>To experience everything that ESPN.com has to offer, we recommend that you upgrade to a newer version of your web browser. Click the upgrade button to the right or <a href="http://www.espn.com/espn/news/story?id=5630562">learn more</a>.</p>
+				<ul>
+					<li><a class="btn-upgrade" href="https://www.google.com/chrome/browser/">Upgrade</a></li>
+					<li><a class="btn-faq" href="http://www.espn.com/espn/news/story?id=5630562">FAQs</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<script>
+	(function($) {
+		  setTimeout(function () {
+				var $alertWrapper = $('#browser-alert-wrapper'),
+				browserAlertOptOut = espn.cookie.get('browseralert');
+				if (browserAlertOptOut != 'true') {
+					  $("<a class=\"btn-close\" href=\"#\">Close</a>").bind('click', function (e) {
+							$alertWrapper.hide();
+							espn.cookie.set('browseralert','true',30);
+							return false;
+					  }).appendTo('.gradient-container',$alertWrapper);
+					  $alertWrapper.show();
+					  espn.cookie.set('browseralert','true');
+				}
+		  },100);
+	})(jQuery);
+</script>
+<![endif]-->
+<div class="header-ad"><div class="header-ad-wrapper" style="min-height:90px;">
+<div class="ad-slot ad-slot-pencil_top" data-slot-type="pencil_top" data-slot-kvps="pos=pencil_top"></div></div></div><div class="nav-main-breadcrumbs-row" style="height: 28px;">
+<div class="nav-main-breadcrumbs">
+<a href="http://www.espn.com">ESPN</a> &raquo; <a href="http://www.espn.com/fantasy/football/">Free Fantasy Football</a> &raquo; <a href="/ffl/leagueoffice?leagueId=302946">OFL</a> &raquo; <a title="Action Is the Juice (Eric Truett)" href="/ffl/clubhouse?leagueId=302946&amp;teamId=12&amp;seasonId=2016" target="_top">Action Is the Juice</a></div>
+<div class="playerSearchDiv"><form class="playerSearchForm" name="playerSearch" id="playerSearch" action="/ffl/freeagency" onsubmit="return playerSuggester.submitSelectedPlayer();" method="GET"><div><input type="hidden" name="leagueId" value="302946"><input type="hidden" name="teamId" value="12"><input type="hidden" name="avail" value="-1"><input type="hidden" name="slotCategoryGroup" value="-1">Find a Player: <input class="playerSearchNameInput" type="text" id="playerName" name="search" onkeyup="playerSuggester.handleKeyUp(event, this.value);" value="Last Name" style="color:#999;" onfocus="playerSuggester.focus();" onblur="playerSuggester.blur();"></div></form><div style="margin: 0px;"><div id="playerSuggestions" style="display: none;" onmouseover="playerSuggester.suggestDivOver();" onmouseout="playerSuggester.suggestDivOut();"></div></div></div><script type="text/javascript">playerSearchObj=new Object();playerSearchObj.varName = "playerSuggester";playerSearchObj.suggestDiv = "playerSuggestions";playerSearchObj.inputField = "playerName";playerSearchObj.cssPrefix = "";playerSearchObj.statId = null;playerSearchObj.chartSplitType = null;var playerSuggester = new PlayerSuggester(playerSearchObj);</script><div class="comparePlayersLinkDiv"><a id="comparePlayersLauncher" href="" instance="_comparePlayers" content="ajax#/ffl/playertable/prebuilt/compareplayers?leagueId=302946&teamId=12&playerCompare=true" class="flexpop" modal="true" fpopStyle="modal">Compare Players</a> (<span id="comparePlayersCount">0</span>)</div><div class="clear"></div></div>
+<div class="games-nav"><ul id="games-tabs"><li class=" "><a onclick=""href="/ffl/leagueoffice?leagueId=302946&seasonId=2016">League</a></li><li class=" "><a onclick=""href="/ffl/clubhouse?leagueId=302946&teamId=12&seasonId=2016">My Team</a></li><li class=" "><a onclick=""href="/ffl/freeagency?leagueId=302946&teamId=12&seasonId=2016">Players</a></li><li class=" "><a onclick="mixpanel.people.increment('standings')"href="/ffl/standings?leagueId=302946&seasonId=2016">Standings</a></li><li class=" "><a onclick="mixpanel.people.increment('scoreboard')"href="/ffl/scoreboard?leagueId=302946&seasonId=2016">Scoreboard</a></li><li class=" games-teams-btn"><a aria-haspopup="true" href="#">Teams</a><div class="clear"></div><ul id="games-tabs1"><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=1&amp;seasonId=2016">The  John Candylands <span class="alt-info">(JCLD)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=3&amp;seasonId=2016">Apathy FC <span class="alt-info">(MEH)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=6&amp;seasonId=2016">Buffalo Buffalo <span class="alt-info">(BUFF)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=7&amp;seasonId=2016">El Blimpo Loco <span class="alt-info">(EBL)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=8&amp;seasonId=2016">Migratory Pigeons <span class="alt-info">(PGNS)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=9&amp;seasonId=2016">Pantsless Voyageurs <span class="alt-info">(PV)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=11&amp;seasonId=2016">We Still Love Puppies <span class="alt-info">(WOOF)</span></a></li><li><a onclick="" href="/ffl/clubhouse?leagueId=302946&amp;teamId=12&amp;seasonId=2016">Action Is the Juice <span class="alt-info">(ATJ)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=14&amp;seasonId=2016">A Team Has  No Name <span class="alt-info">(JDJ2)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=15&amp;seasonId=2016">Russell Wilson Phillips <span class="alt-info">(RWP)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=17&amp;seasonId=2016">The Cohnheads <span class="alt-info">(EC)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=18&amp;seasonId=2016">Stranger Jawns <span class="alt-info">(JAWN)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=19&amp;seasonId=2016">Bitter Sweets <span class="alt-info">(BTTR)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=20&amp;seasonId=2016">Jefferson's Dynomite <span class="alt-info">(DYNO)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=22&amp;seasonId=2016">Go PACS Go <span class="alt-info">(PACS)</span></a></li><li><a onclick="mixpanel.people.increment('competing_team')" href="/ffl/clubhouse?leagueId=302946&amp;teamId=23&amp;seasonId=2016">The Peyton WoMannings <span class="alt-info">(WOMN)</span></a></li></ul></li><li class=" off games-fancast-btn"><a href="/ffl/fantasycast#seasonId=2016&amp;leagueId=302946&amp;teamId=12" onclick="mixpanel.people.increment('launched_fantasycast');if (typeof launchFantasycast == 'function') return !launchFantasycast('/ffl/fantasycast#seasonId=2016&amp;leagueId=302946&amp;teamId=12');"></a></li><li class="games-myfntsyteam-btn" ><a href="#" aria-haspopup="true">My Fantasy Teams<img height="4" align="top" width="7" border="0" src="http://g.espncdn.com/s/ffllm/14/images/shell/yellow_dropdwn_arrow.png"/></a><div class="clear"></div><ul id="games-tabs2" ><li><a href="/ffl/tools/editmyteams?leagueId=302946" class="edit-list-option">Edit This List</a></li><li><a onclick="mixpanel.people.increment('changeleague')" href="/ffl/clubhouse?leagueId=302946&teamId=12&seasonId=2016">Action Is the Juice<br><span class="alt-info">OFL</span></a></li><li><a onclick="mixpanel.people.increment('changeleague')" href="/ffl/clubhouse?leagueId=996714&teamId=3&seasonId=2016">Team Truett<br><span class="alt-info">New Orleans 18-Team PPR 996714</span></a></li></ul></li></ul></div><div class="gamesmain container">
+<div class="games-innercol">
+<div class="games-innercol2">
+<div class="games-ad300">
+<div class="ad-slot ad-slot-InContent" data-slot-type="incontent" data-slot-kvps="pos=InContent"></div></div>
+<div class="games-nav subnav"><ul id="games-subnav-links"><li><div>Blimpo Loco:</div></li><li class="games-on"><a href="/ffl/clubhouse?leagueId=302946&teamId=7" >Roster</a></li><li class=""><a href="/ffl/trade?leagueId=302946&teamId=7" >Propose Trade</a></li><li class=""><a href="/ffl/trophycase?leagueId=302946&teamId=7" >Trophies</a></li><li class=""><a href="/ffl/schedule?leagueId=302946&teamId=7" >Schedule</a></li><li class=""><a href="/ffl/recentactivity?leagueId=302946&teamId=7&activityType=2" >TranLog</a></li><li class=""><a href="/ffl/activestats?leagueId=302946&teamId=7" >Roster Summary</a></li></ul></div><div ><div class="games-topcol games-topcol-expand"><div class="games-univ-mod1"><img style="border:none" src="http://www.bluebellylizard.com/bluebelly/books/pout/phishy_photos/images/dirigible.jpg" width=151 height=129.0 /><p><strong>Winterfell</strong><br><br></p></div><div class="games-univ-mod2"><div class="games-univ-mod3"><h3 class="team-name">El Blimpo Loco <em>(EBL)</em></h3><ul><li><a href="/ffl/leagueoffice?leagueId=302946"><strong>OFL</strong></a></li><div class="clear"></div></ul><ul><li class="per-info">Deepa Rajkarne (<a href="/ffl/tools/sendleagueemail?leagueId=302946&toUserInfoIds=65149817" class="notbold">Email</a>)</li><li class="per-info"> | Fred Sanchez (<a href="/ffl/tools/sendleagueemail?leagueId=302946&toUserInfoIds=16472199" class="notbold">Email</a>)</li><div class="clear"></div></ul><div class="clear"></div></div><div class="games-univ-mod4"><h4><strong>Record:</strong> 0-0 <em>(1st)</em></h4><a class="games-schedule" href="/ffl/schedule?leagueId=302946&teamId=7">Schedule</a></div><div class="clear"></div></div><div class="games-univ-mod2 univ-bottom-mod2"><div class="games-univ-mod5"><ul><li class="games-firstlist"><strong>Current Matchup:</strong> at <a title="Stranger Jawns (Pong Chulirashaneekorn, Tiffani Jake)" href="/ffl/clubhouse?leagueId=302946&amp;teamId=18&amp;seasonId=2016" target="_top">Jawns</a> (<a href="/ffl/matchuppreview?leagueId=302946&teamId=7&scoringPeriodId=1">Preview</a>)</li><li class="games-btm-area"><ul><li><strong>Acquisitions:</strong> 0</li><li><strong>Trades:</strong> 0</li><li><strong>Free Agent Budget:</strong> <a href="/ffl/tools/waiverorder?leagueId=302946">$100</a>&nbsp;&nbsp;/&nbsp;&nbsp;<strong>Order:</strong> <a href="/ffl/tools/waiverorder?leagueId=302946">12 of 16</a></li></ul></li></ul></div><div class="games-univ-mod5 univ-right-mod5">
+		<style>
+		.games-univ-mod5.univ-right-mod5 {
+			-moz-border-radius: 0;
+			border-radius: 0;
+			padding:0;
+			width:246px;
+			height:104px;
+		}
+		</style>
+		<iframe width="246" height="104" scrolling=no style="background:#D7DGDF;" src="http://streak.espn.com/format/modules/lm_clubhouse/streakModule?lm=ffl">STREAK</iframe>
+		</div><div class="clear"></div></div><div class="clear"></div><div class="games-dates-mod">&nbsp;</div></div><div class="clear"></div><div class="games-bottomcol"><div class="games-fullcol"><div id="playerTableContainerDiv" class="playerTableContainerDiv">
+<script type="text/javascript">
+updateScoringPeriodNav = function() {
+	var scoringPeriodNavString = "<ul><li><h3>Lineups:</h3></li><li class=\"date-on\"><div>This Week</div></li></ul>";
+	var scoringPeriodNav = jQuery('.games-dates-mod');
+	if(scoringPeriodNav != null && scoringPeriodNav.length > 0)
+		scoringPeriodNav.html(scoringPeriodNavString);
+		
+};
+updateScoringPeriodNav();
+</script>
+<input id="bidAmount" name="bidAmount" value="0" type="hidden" /><br clear="all" style="line-height: 12px"><table width="970px" cellpadding="0" cellspacing="0" border="0" id="playertableFrameOuterShell"><tr><td valign="bottom" class="playerTableTabsCell clubhousePlayerTableTabsCell"><div id="playerTableHeader"><ul><li id="current"><a href="#" onclick="players('leagueId=302946&teamId=7&seasonId=2016&view=overview&context=clubhouse&ajaxPath=playertable/prebuilt/manageroster&managingIr=false&droppingPlayers=false&asLM=false');return false;";>Overview</a></li><li ><a href="#" onclick="players('leagueId=302946&teamId=7&seasonId=2016&view=stats&context=clubhouse&ajaxPath=playertable/prebuilt/manageroster&managingIr=false&droppingPlayers=false&asLM=false');return false;";>Stats</a></li><li ><a href="#" onclick="players('leagueId=302946&teamId=7&seasonId=2016&view=news&context=clubhouse&ajaxPath=playertable/prebuilt/manageroster&managingIr=false&droppingPlayers=false&asLM=false');return false;";>News</a></li><li ><a href="#" onclick="players('leagueId=302946&teamId=7&seasonId=2016&view=projections&context=clubhouse&ajaxPath=playertable/prebuilt/manageroster&managingIr=false&droppingPlayers=false&asLM=false');return false;";>Projections</a></li><li ><a href="#" onclick="players('leagueId=302946&teamId=7&seasonId=2016&view=upcomingschedule&context=clubhouse&ajaxPath=playertable/prebuilt/manageroster&managingIr=false&droppingPlayers=false&asLM=false');return false;";>Schedule</a></li><li ><a href="#" onclick="players('leagueId=302946&teamId=7&seasonId=2016&view=ranks&context=clubhouse&ajaxPath=playertable/prebuilt/manageroster&managingIr=false&droppingPlayers=false&asLM=false');return false;";>Ranks</a></li></ul><span style="display: none;" class="playerTableTabSpinner" id="playerTableTabSpinner"><img src="http://g.espncdn.com/s/ffllm/14/images/playerTableTabLoad.gif" /></span></div></td><td align="right" valign="top" class="playerTableSubmitCell"></td></tr></table><table width="970px" cellpadding="0" cellspacing="0" border="0" class="playertableFrameBorder"><tr><td colspan="2" class="playertableFrameInnerShell"><table class="playerTableTable tableBody" cellpadding="0" cellspacing="1" border="0" id="playertable_0"><tr class="playerTableBgRowHead tableHead playertableSectionHeader"><th colspan="2" class="playertableSectionHeaderFirst">STARTERS</th><td class="sectionLeadingSpacer"></td><th colspan="2">Wk 1</th><td class="sectionLeadingSpacer"></td><th colspan="4">2015 SEASON</th><td class="sectionLeadingSpacer"></td><th colspan="5">Week 1</th></tr><tr class="playerTableBgRowSubhead tableSubHead"><td width="65px">SLOT</td><td>PLAYER, TEAM POS</td><td class="sectionLeadingSpacer"></td><td title="Opponent">OPP</td><td title="Game Status">STATUS ET</td><td class="sectionLeadingSpacer"></td><td class="playertableData" title="Position Rank">PRK</td><td class="playertableStat appliedPoints" title="Fantasy Points">PTS</td><td class="playertableStat appliedPoints" title="Average Fantasy Points Per Game">AVG</td><td class="playertableStat appliedPoints" title="Fantasy Points">LAST</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints" title="ESPN Projection">PROJ</td><td class="playertableData" title="Opponent Rank">OPRK</td><td class="playertableData" title="Percent Started">%ST</td><td class="playertableData" title="Percent Owned">%OWN</td><td class="playertableData" title="Change in Percent Owned">+/-</td></tr><tr id="plyr5536" class="pncPlayerRow playerTableBgRow0"><td id="slot_5536" class="slot_0 playerSlot" style="font-weight: bold;">QB</td><td class="playertablePlayerName" id="playername_5536" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="5536" teamId="12" seasonId="2016" cache="true">Ben Roethlisberger</a>, Pit&nbsp;QB<a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="1" leagueId="302946" playerId="5536" teamId="12" seasonId="2016" cache="true"><img src="http://g.espncdn.com/s/ffllm/14/images/icons/sml/news_breaking.png" height="12" width="15" border="0" style="margin:0 6px 0 6px" title="Breaking News" /></a></td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=1&playerId=70128&seasonId=2016" class="flexpop" instance="_ppc">@Wsh</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360912028_23" href="http://www.espn.com/nfl/game?gameId=400874537" target="_blank">Mon 7:10</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">19</td><td class="playertableStat appliedPoints">244.1</td><td class="playertableStat appliedPoints">15.3</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">--</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=1&playerId=70128&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:green">20th</span></a></td><td class="playertableData"><nobr>87.4</nobr></td><td class="playertableData"><nobr>98.7</nobr></td><td class="playertableData"><nobr><span style="color:green">+0.4</span></nobr></td></tr><tr id="plyr12514" class="pncPlayerRow playerTableBgRow1"><td id="slot_12514" class="slot_2 playerSlot" style="font-weight: bold;">RB</td><td class="playertablePlayerName" id="playername_12514" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="12514" teamId="12" seasonId="2016" cache="true">LeSean McCoy</a>, Buf&nbsp;RB<a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="1" leagueId="302946" playerId="12514" teamId="12" seasonId="2016" cache="true"><img src="http://g.espncdn.com/s/ffllm/14/images/icons/sml/news_recent.png" height="12" width="15" border="0" style="margin:0 6px 0 6px" title="Recent News" /></a></td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=2&playerId=70233&seasonId=2016" class="flexpop" instance="_ppc">@Bal</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911033_2" href="http://www.espn.com/nfl/game?gameId=400874510" target="_blank">Sun 1:00</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">16</td><td class="playertableStat appliedPoints">186.7</td><td class="playertableStat appliedPoints">11.7</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">0</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=2&playerId=70233&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:red">7th</span></a></td><td class="playertableData"><nobr>95.9</nobr></td><td class="playertableData"><nobr>99.7</nobr></td><td class="playertableData"><nobr><span style="color:green">+0.1</span></nobr></td></tr><tr id="plyr13204" class="pncPlayerRow playerTableBgRow0"><td id="slot_13204" class="slot_2 playerSlot" style="font-weight: bold;">RB</td><td class="playertablePlayerName" id="playername_13204" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="13204" teamId="12" seasonId="2016" cache="true">Ryan Mathews</a>, Phi&nbsp;RB<a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="1" leagueId="302946" playerId="13204" teamId="12" seasonId="2016" cache="true"><img src="http://g.espncdn.com/s/ffllm/14/images/icons/sml/news_recent.png" height="12" width="15" border="0" style="margin:0 6px 0 6px" title="Recent News" /></a></td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=2&playerId=70205&seasonId=2016" class="flexpop" instance="_ppc">Cle</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911021_21" href="http://www.espn.com/nfl/game?gameId=400874520" target="_blank">Sun 1:00</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">37</td><td class="playertableStat appliedPoints">130.5</td><td class="playertableStat appliedPoints">8.2</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">--</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=2&playerId=70205&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:red">13th</span></a></td><td class="playertableData"><nobr>54.3</nobr></td><td class="playertableData"><nobr>94.0</nobr></td><td class="playertableData"><nobr><span style="color:green">+2</span></nobr></td></tr><tr id="plyr16733" class="pncPlayerRow playerTableBgRow1"><td id="slot_16733" class="slot_4 playerSlot" style="font-weight: bold;">WR</td><td class="playertablePlayerName" id="playername_16733" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="16733" teamId="12" seasonId="2016" cache="true">Odell Beckham Jr.</a>, NYG&nbsp;WR</td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=3&playerId=70306&seasonId=2016" class="flexpop" instance="_ppc">@Dal</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911006_19" href="http://www.espn.com/nfl/game?gameId=400874574" target="_blank">Sun 4:25</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">4</td><td class="playertableStat appliedPoints">355.3</td><td class="playertableStat appliedPoints">22.2</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">0</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=3&playerId=70306&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:red">8th</span></a></td><td class="playertableData"><nobr>99.4</nobr></td><td class="playertableData"><nobr>100.0</nobr></td><td class="playertableData"><nobr>+0</nobr></td></tr><tr id="plyr16725" class="pncPlayerRow playerTableBgRow0"><td id="slot_16725" class="slot_4 playerSlot" style="font-weight: bold;">WR</td><td class="playertablePlayerName" id="playername_16725" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="16725" teamId="12" seasonId="2016" cache="true">Sammy Watkins</a>, Buf&nbsp;WR<a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="1" leagueId="302946" playerId="16725" teamId="12" seasonId="2016" cache="true"><img src="http://g.espncdn.com/s/ffllm/14/images/icons/sml/news_breaking.png" height="12" width="15" border="0" style="margin:0 6px 0 6px" title="Breaking News" /></a></td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=3&playerId=70333&seasonId=2016" class="flexpop" instance="_ppc">@Bal</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911033_2" href="http://www.espn.com/nfl/game?gameId=400874510" target="_blank">Sun 1:00</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">20</td><td class="playertableStat appliedPoints">234.8</td><td class="playertableStat appliedPoints">14.7</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">0</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=3&playerId=70333&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:green">29th</span></a></td><td class="playertableData"><nobr>93.3</nobr></td><td class="playertableData"><nobr>99.5</nobr></td><td class="playertableData"><nobr><span style="color:green">+0.2</span></nobr></td></tr><tr id="plyr11295" class="pncPlayerRow playerTableBgRow1"><td id="slot_11295" class="slot_6 playerSlot" style="font-weight: bold;">TE</td><td class="playertablePlayerName" id="playername_11295" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="11295" teamId="12" seasonId="2016" cache="true">Martellus Bennett</a>, NE&nbsp;TE</td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=4&playerId=70422&seasonId=2016" class="flexpop" instance="_ppc">@Ari</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911022_17" href="http://www.espn.com/nfl/game?gameId=400874539" target="_blank">Sun 8:30</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">21</td><td class="playertableStat appliedPoints">114.9</td><td class="playertableStat appliedPoints">7.2</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">--</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=4&playerId=70422&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:green">21st</span></a></td><td class="playertableData"><nobr>25.1</nobr></td><td class="playertableData"><nobr>71.4</nobr></td><td class="playertableData"><nobr><span style="color:green">+5.5</span></nobr></td></tr><tr id="plyr16804" class="pncPlayerRow playerTableBgRow0"><td id="slot_16804" class="slot_23 playerSlot" style="font-weight: bold;">FLEX</td><td class="playertablePlayerName" id="playername_16804" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="16804" teamId="12" seasonId="2016" cache="true">John Brown</a>, Ari&nbsp;WR&nbsp;&nbsp;<span title="Questionable" style="font-weight:bold;color: red;">Q</span><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="1" leagueId="302946" playerId="16804" teamId="12" seasonId="2016" cache="true"><img src="http://g.espncdn.com/s/ffllm/14/images/icons/sml/news_and_video.png" height="12" width="23" border="0" style="margin:0 6px 0 6px" title="Breaking News and Video" /></a></td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=3&playerId=70317&seasonId=2016" class="flexpop" instance="_ppc">NE</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911022_22" href="http://www.espn.com/nfl/game?gameId=400874539" target="_blank">Sun 8:30</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">24</td><td class="playertableStat appliedPoints">215.5</td><td class="playertableStat appliedPoints">13.5</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">--</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=3&playerId=70317&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:green">21st</span></a></td><td class="playertableData"><nobr>26.3</nobr></td><td class="playertableData"><nobr>92.0</nobr></td><td class="playertableData"><nobr><span style="color:green">+2.1</span></nobr></td></tr><tr id="plyr60034" class="pncPlayerRow playerTableBgRow1"><td id="slot_60034" class="slot_16 playerSlot" style="font-weight: bold;">D/ST</td><td class="playertablePlayerName" id="playername_60034" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="60034" teamId="12" seasonId="2016" cache="true">Texans D/ST</a>&nbsp;D/ST</td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=16&playerId=71603&seasonId=2016" class="flexpop" instance="_ppc">Chi</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911034_34" href="http://www.espn.com/nfl/game?gameId=400874511" target="_blank">Sun 1:00</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">7</td><td class="playertableStat appliedPoints">145</td><td class="playertableStat appliedPoints">9.1</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">--</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=16&playerId=71603&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:green">25th</span></a></td><td class="playertableData"><nobr>85.9</nobr></td><td class="playertableData"><nobr>95.8</nobr></td><td class="playertableData"><nobr><span style="color:green">+0.9</span></nobr></td></tr><tr class="playerTableBgRowHead tableHead playertableSectionHeader"><th colspan="2" class="playertableSectionHeaderFirst">BENCH</th><td class="sectionLeadingSpacer"></td><th colspan="2">Wk 1</th><td class="sectionLeadingSpacer"></td><th colspan="4">2015 SEASON</th><td class="sectionLeadingSpacer"></td><th colspan="5">Week 1</th></tr><tr class="playerTableBgRowSubhead tableSubHead"><td width="65px">SLOT</td><td>PLAYER, TEAM POS</td><td class="sectionLeadingSpacer"></td><td title="Opponent">OPP</td><td title="Game Status">STATUS ET</td><td class="sectionLeadingSpacer"></td><td class="playertableData" title="Position Rank">PRK</td><td class="playertableStat appliedPoints" title="Fantasy Points">PTS</td><td class="playertableStat appliedPoints" title="Average Fantasy Points Per Game">AVG</td><td class="playertableStat appliedPoints" title="Fantasy Points">LAST</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints" title="ESPN Projection">PROJ</td><td class="playertableData" title="Opponent Rank">OPRK</td><td class="playertableData" title="Percent Started">%ST</td><td class="playertableData" title="Percent Owned">%OWN</td><td class="playertableData" title="Change in Percent Owned">+/-</td></tr><tr id="plyr17907" class="pncPlayerRow playerTableBgRow0"><td id="slot_17907" class="slot_20 playerSlot" style="font-weight: bold;">Bench</td><td class="playertablePlayerName" id="playername_17907" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="17907" teamId="12" seasonId="2016" cache="true">Dak Prescott</a>, Dal&nbsp;QB<a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="1" leagueId="302946" playerId="17907" teamId="12" seasonId="2016" cache="true"><img src="http://g.espncdn.com/s/ffllm/14/images/icons/sml/news_and_video.png" height="12" width="23" border="0" style="margin:0 6px 0 6px" title="Breaking News and Video" /></a></td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=1&playerId=70119&seasonId=2016" class="flexpop" instance="_ppc">NYG</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911006_6" href="http://www.espn.com/nfl/game?gameId=400874574" target="_blank">Sun 4:25</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">--</td><td class="playertableStat appliedPoints">--</td><td class="playertableStat appliedPoints">--</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">--</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=1&playerId=70119&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:green">31st</span></a></td><td class="playertableData"><nobr>8.8</nobr></td><td class="playertableData"><nobr>52.0</nobr></td><td class="playertableData"><nobr><span style="color:green">+45.6</span></nobr></td></tr><tr id="plyr15102" class="pncPlayerRow playerTableBgRow1"><td id="slot_15102" class="slot_20 playerSlot" style="font-weight: bold;">Bench</td><td class="playertablePlayerName" id="playername_15102" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="15102" teamId="12" seasonId="2016" cache="true">Rishard Matthews</a>, Ten&nbsp;WR<a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="1" leagueId="302946" playerId="15102" teamId="12" seasonId="2016" cache="true"><img src="http://g.espncdn.com/s/ffllm/14/images/icons/sml/news_breaking.png" height="12" width="15" border="0" style="margin:0 6px 0 6px" title="Breaking News" /></a></td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=3&playerId=70316&seasonId=2016" class="flexpop" instance="_ppc">Min</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911010_10" href="http://www.espn.com/nfl/game?gameId=400874524" target="_blank">Sun 1:00</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">49</td><td class="playertableStat appliedPoints">143.6</td><td class="playertableStat appliedPoints">9.0</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">--</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=3&playerId=70316&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:red">15th</span></a></td><td class="playertableData"><nobr>0.9</nobr></td><td class="playertableData"><nobr>33.6</nobr></td><td class="playertableData"><nobr><span style="color:green">+6.8</span></nobr></td></tr><tr id="plyr17616" class="pncPlayerRow playerTableBgRow0"><td id="slot_17616" class="slot_20 playerSlot" style="font-weight: bold;">Bench</td><td class="playertablePlayerName" id="playername_17616" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="17616" teamId="12" seasonId="2016" cache="true">Javorius Allen</a>, Bal&nbsp;RB<a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="1" leagueId="302946" playerId="17616" teamId="12" seasonId="2016" cache="true"><img src="http://g.espncdn.com/s/ffllm/14/images/icons/sml/news_recent.png" height="12" width="15" border="0" style="margin:0 6px 0 6px" title="Recent News" /></a></td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=2&playerId=70202&seasonId=2016" class="flexpop" instance="_ppc">Buf</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911033_33" href="http://www.espn.com/nfl/game?gameId=400874510" target="_blank">Sun 1:00</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">29</td><td class="playertableStat appliedPoints">149.7</td><td class="playertableStat appliedPoints">9.4</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">--</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=2&playerId=70202&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:red">14th</span></a></td><td class="playertableData"><nobr>0.5</nobr></td><td class="playertableData"><nobr>17.6</nobr></td><td class="playertableData"><nobr><span style="color:green">+2.7</span></nobr></td></tr><tr id="plyr11383" class="pncPlayerRow playerTableBgRow1"><td id="slot_11383" class="slot_20 playerSlot" style="font-weight: bold;">Bench</td><td class="playertablePlayerName" id="playername_11383" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="11383" teamId="12" seasonId="2016" cache="true">Tim Hightower</a>, NO&nbsp;RB<a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="1" leagueId="302946" playerId="11383" teamId="12" seasonId="2016" cache="true"><img src="http://g.espncdn.com/s/ffllm/14/images/icons/sml/news_recent.png" height="12" width="15" border="0" style="margin:0 6px 0 6px" title="Recent News" /></a></td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=2&playerId=70213&seasonId=2016" class="flexpop" instance="_ppc">Oak</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911018_18" href="http://www.espn.com/nfl/game?gameId=400874543" target="_blank">Sun 1:00</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">56</td><td class="playertableStat appliedPoints">88.4</td><td class="playertableStat appliedPoints">5.5</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">--</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=2&playerId=70213&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:green">21st</span></a></td><td class="playertableData"><nobr>0.4</nobr></td><td class="playertableData"><nobr>12.2</nobr></td><td class="playertableData"><nobr><span style="color:green">+2.4</span></nobr></td></tr><tr id="plyr13197" class="pncPlayerRow playerTableBgRow0"><td id="slot_13197" class="slot_20 playerSlot" style="font-weight: bold;">Bench</td><td class="playertablePlayerName" id="playername_13197" style=""><a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="null" leagueId="302946" playerId="13197" teamId="12" seasonId="2016" cache="true">Sam Bradford</a>, Phi&nbsp;QB<a href="" class="flexpop" content="tabs#ppc" instance="_ppc" fpopHeight="357px" fpopWidth="490px" tab="1" leagueId="302946" playerId="13197" teamId="12" seasonId="2016" cache="true"><img src="http://g.espncdn.com/s/ffllm/14/images/icons/sml/news_recent.png" height="12" width="15" border="0" style="margin:0 6px 0 6px" title="Recent News" /></a></td><td class="sectionLeadingSpacer"></td><td><div><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=1&playerId=70105&seasonId=2016" class="flexpop" instance="_ppc">Cle</a></div></td><td class="gameStatusDiv"><a class="gamestatus_360911021_21" href="http://www.espn.com/nfl/game?gameId=400874520" target="_blank">Sun 1:00</a></td><td class="sectionLeadingSpacer"></td><td class="playertableData">23</td><td class="playertableStat appliedPoints">204.9</td><td class="playertableStat appliedPoints">12.8</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">--</td><td class="playertableData"><a href content="ajax#/ffl/format/pvopop/summary?leagueId=302946&positionId=1&playerId=70105&seasonId=2016" class="flexpop" instance="_ppc" style="text-decoration: none; cursor: pointer;"><span style="color:green">28th</span></a></td><td class="playertableData"><nobr>1.2</nobr></td><td class="playertableData"><nobr>5.5</nobr></td><td class="playertableData"><nobr><span style="color:green">+1.8</span></nobr></td></tr><tr class="pncPlayerRow irRow playerTableBgRow1"><td class="slot_21 playerSlot" style="font-weight: bold;">IR</td><td>&nbsp;</td><td class="sectionLeadingSpacer"></td><td></td><td></td><td class="sectionLeadingSpacer"></td><td class="playertableData">--</td><td class="playertableStat appliedPoints">--</td><td class="playertableStat appliedPoints">--</td><td class="playertableStat appliedPoints">--</td><td class="sectionLeadingSpacer"></td><td class="playertableStat appliedPoints">--</td><td class="playertableData">--</td><td class="playertableData">--</td><td class="playertableData">--</td><td class="playertableData">--</td></tr></table></td></tr></table><br /></div></div></div><div class="games-footercol"><script src="http://a.espncdn.com/legacy/transitionalHeader/1.0.18/js/nav-external.js"></script>
+
+	<style type="text/css">
+		.needHelpModule button {border-radius: 5px; background-color: #0066cc; padding: 10px 30px; font-size: 15px; color: #f3f3f3; margin: 15px auto; cursor: pointer; text-decoration: none; border: none; font-family: Tahoma, Geneva, sans-serif; display: block;}
+		div.gamesmain .needHelpModule h1, div.gamesmain .needHelpModule p {margin: 10px;}
+		.needHelpModule p {color: #606261; line-height: 16px; font-size: 12px;}
+		.needHelpModule.pencil {background-color: #f3f3f3; padding: 10px; margin-bottom: 20px; display: flex; align-items: center;}
+		.needHelpModule.pencil h1 {font-family: verdana, helvetica, sans-serif; font-weight: 500; font-size: 20px; margin-bottom: 0;}
+		.needHelpModule.pencil button {display: inline-block;}
+		.needHelpModule.pencil .content {flex-grow: 1; flex-basis: 0; color: #6d7172;}
+		.needHelpModule.lo-sidebar-box .content {margin-bottom:10px;}
+		.needHelpModule ul {float: left; margin: 0 15px;}
+		.needHelpModule ul li{padding: 5px 0; font-weight: 700;}
+	</style>
+
+	<div class="pencil needHelpModule">
+		<div class="content">
+			<h1>Need Help?</h1>
+			<p class="contentBody">
+<ul>
+<li><a href="https://support.espn.com/articles/en_US/FAQ/Username-and-Password-Help?section=Fantasy-Football">Username and Password Help</a></li>
+<li><a href="https://support.espn.com/articles/en_US/FAQ/Login-and-Account-Issues?section=Fantasy-Football">Login and Account Issues</a></li>
+<li><a href="https://support.espn.com/articles/en_US/FAQ/How-do-I-change-my-e-mail-address?section=Fantasy-Football">Change Email Address</a></li>
+</ul>
+<ul>
+<li><a href="https://support.espn.com/articles/en_US/FAQ/Reset-Draft?section=Fantasy-Football">Reset Draft</a></li>
+<li><a href="https://support.espn.com/articles/en_US/FAQ/Issues-Joining-a-League?section=Fantasy-Football">Issues Joining a League</a></li>
+<li><a href="https://support.espn.com/articles/en_US/FAQ/Find-Your-Team?section=Fantasy-Football">Find Your Team</a></li>
+</ul></p>
+		</div>
+		<p><a href="https://support.espn.com/en_US/Fantasy-Football/Managing-Your-Team"><button>Fantasy Football Help</button></a></p>
+	</div>
+
+<div class="OUTBRAIN" data-src="http://games.espn.com/ffl/clubhouse?leagueId=302946&teamId=7&seasonId=2016" data-widget-id="AR_9" data-ob-template="espn" style="width:956px;"></div><script type="text/javascript" async="async" src="http://widgets.outbrain.com/outbrain.js"></script></div></div>
+<br><br>
+</div>
+</div>
+</div>
+<!-- ////////// start: Transitional Footer ////////// -->
+<!--start transitional elements wrapper -->
+<div class="transitional-elements">
+<!--[if IE 6]><div class="ie6"><![endif]-->
+<!--[if IE 7]><div class="ie7"><![endif]-->
+<!--[if IE 8]><div class="ie8"><![endif]-->
+<div id="trans-footer" class="container">
+<p><strong><a href="http://www.espn.com">ESPN.com</a></strong>  |  <a href="https://r.espn.com/espn/memberServices">Member Services</a> | <a href="http://games.espn.com/frontpage">Fantasy Games</a> | <a href="http://games.espn.com/ffl/content?page=fflrulesindex2016">Help</a> | <a href="http://preferences.truste.com/2.0/?type=espn&affiliateId=148" onclick="window.open('http://preferences.truste.com/2.0/?type=espn&affiliateId=148','popup','width=986,height=878,scrollbars=yes,resizable=no,toolbar=no,directories=no,location=no,menubar=no,status=no,left=0,top=0'); return false">Interest-Based Ads</a></p>
+
+<p>Copyright &copy;2016 ESPN Internet Ventures.  <a href="http://disneytermsofuse.com/">Terms of Use</a>  and <a href="http://disney.go.com/corporate/privacy/pp_espn.html">Privacy Policy and Safety Information/Your California Privacy Rights</a> are applicable to this site.<br><br>Officially Licensed Product of NFL PLAYERS. Visit <a href="http://www.nflplayers.com" target="new">www.nflplayers.com</a>.</p></div>
+<!-- end transitional elements wrapper -->
+<!--[if lte IE 8]></div><![endif]-->
+</div>
+<!-- ////////// end: Transitional Footer ////////// -->
+</div>
+</div>
+</div>
+</div>
+</td></tr></table>
+</div>
+
+<script type="text/javascript">
+	if ('true' == 'true') {
+		mixpanel.identify('7883CE4B-B2E7-11D2-9B36-00A0C9862BBB');
+		mixpanel.people.set({
+			'$name': '7883CE4B-B2E7-11D2-9B36-00A0C9862BBB',
+			'Logged In': 'true'
+		});
+		mixpanel.people.increment('page_views');
+	}
+	mixpanel.track("Page View", {
+		'Referrer Type': 'external',
+		'Page Type': 'LM Page',
+		'Url': '/ffl/clubhouse'
+	});
+</script>
+
+
+<!-- SiteCatalyst code version: H.21.3 Copyright 1997-2010 Omniture, Inc. http://www.omniture.com -->
+<script type="text/javascript">
+	var undef = 'undefined'
+	,s_account="wdgespfantasy"
+	,omniPageName = "fantasy:football:ffl:clubhouse"
+	
+	,insiderStatus = ""
+	,anGen = ""
+	,anYear = ""
+	,anDateString = ""
+	,anLoginStatus = ""
+	,callOmniture = function(){
+		/*-- core story s_omni properties --*/
+		if (typeof anCV != "undefined"){anParseLoginBarInfo(anCV);}
+		s_omni.pageName="football:ffl:clubhouse";
+		s_omni.server = window.location.host; // Server from the Host
+		s_omni.channel = "football";
+		s_omni.prop1 = "fantasy";
+		s_omni.prop4 = "game-lm-free-custom";
+		s_omni.prop5 = "football:ffl";
+		s_omni.prop11 = (insiderStatus !== null) ? insiderStatus + ":premium-no" : "premium-no";
+		s_omni.prop17 = "en";
+		s_omni.prop21 = anDateString;
+		s_omni.prop22 = anGen;
+		s_omni.prop25 = "football";
+		s_omni.prop29 = anLoginStatus;
+		s_omni.prop30 = "n";
+		s_omni.hier1 = "football:ffl:clubhouse";
+		s_omni.eVar7 = anYear + ":" + anGen + ":" + anLoginStatus + ":" + s_omni.prop11 + ":";
+		s_omni.eVar9 = "en";
+		s_omni.eVar13 = "football:ffl:clubhouse";
+		s_omni.eVar19 = "football";
+		
+		if (s_omni.prop11=="anonymous:premium-yes" || s_omni.prop11=="insider-no:premium-yes" && typeof s_omni.prop4!="undefined" &&
+			(s_omni.prop4=="story" || s_omni.prop4=="blog")) {
+			if (typeof s_omni.events != "undefined" && s_omni.events!="") {
+				s_omni.events = s_omni.events+",event8" }
+			else { s_omni.events="event8" }
+		}
+		anDebugCase = "ver_15Feb11_0_";
+		/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+		
+		var s_code = s_omni.t();
+		if(s_code) {
+			var sci = new Image(1,1);
+			sci.onload = function() {console.log("loaded no append")};
+			sci.src = s_code;
+		}
+		
+	};
+	
+
+
+	if (typeof(s_omni) === 'undefined') {
+		jQuery(function($) {
+			// we want to load the analytics files from the cache if possible - so, let's use full $.ajax() calls
+			$.ajax({
+				type:'GET',
+				url: 'http://a.espncdn.com/combiner/c?js=analytics/sOmni.js,analytics/analytics.js,analytics/externalnielsen.js',
+				dataType: 'script',
+				cache: true,
+				success: function() {
+					var lgSrc;
+					if(typeof anCV !== undef && anCV === '' && document.getElementById('form-memberarea') != null) {
+						lgSrc = 'https://r.espn.com/members/util/getUserInfo?cb=runOmnitureIndependently';
+						$.getScript(lgSrc); // we don't want this to be cached - so we'll use the $.getScript() method
+					} else {
+						callOmniture();
+					}
+				}
+			});
+		});
+	}
+
+
+</script>
+<!-- End SiteCatalyst code version: H.21. -->
+
+<!-- Begin comScore Tag -->
+<script type="text/javascript">
+	jQuery(function($) {
+		if(typeof window._comscore === 'undefined') {
+			window._comscore = window._comscore || [];
+			window._comscore.push({ c1: "2", c2: "3000005" });
+			jQuery.getScript((document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js");
+		}
+	});
+</script>
+<!-- End comScore Tag --></body>
+</html>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+fbasim
+</name>
+</assembly>
+<members>
+<member name="M:fbasim.SimQueries.QuerySeasons(System.Collections.Generic.List{fbasim.PlayerSeason},System.Int32,System.Int32)">
+	<summary>
+ Uses LINQ to query List of PlayerSeason by date range.
+ </summary>
+	<param name="seasons">List of integer</param>
+	<param name="year1">The starting year.</param>
+	<param name="year2">The ending year.</param>
+	<returns>List of PlayerSeason.</returns>
+</member><member name="M:fbasim.PlayerSeasons.#ctor">
+	<summary>
+ Initializes a new instance of the <see cref="T:fbasim.PlayerSeasons"/> class.
+ </summary>
+</member><member name="P:fbasim.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:fbasim.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:fbasim.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:fbasim.BasePlayer.#ctor">
+	<summary>
+ Initializes a new instance of the <see cref="T:fbasim.BasePlayer"/> class.
+ </summary>
+</member><member name="M:fbasim.BasePlayer.CareerTotal(System.String)">
+	<summary>
+ Calculates total over all seasons in Seasons property.
+ </summary>
+	<param name="statname">The name of the statistic to calculate the total.</param>
+	<returns>Total of a single statistic.</returns>
+</member><member name="M:fbasim.BasePlayer.GetSeason(System.Int32)">
+	<summary>
+ Gets single PlayerSeason object from Seasons list.
+ </summary>
+	<param name="year">The season year.</param>
+	<returns>A single PlayerSeason object.</returns>
+</member><member name="M:fbasim.BasePlayer.GetSeasons(System.Int32,System.Int32)">
+	<summary>
+ Gets a list of PlayerSeason objects by LINQ query for dates.
+ </summary>
+	<param name="startyear">The startyear of the range.</param>
+	<param name="endyear">The endyear of the range.</param>
+	<returns>List of PlayerSeason objects</returns>
+</member>
+</members>
+</doc>

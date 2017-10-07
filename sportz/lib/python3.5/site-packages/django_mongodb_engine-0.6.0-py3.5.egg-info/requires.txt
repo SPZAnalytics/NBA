@@ -1,0 +1,2 @@
+pymongo>=2.8
+djangotoolbox>=1.6.0

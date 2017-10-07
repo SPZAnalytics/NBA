@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Players>
+  <Player id='ABDULKA01' FirstName='Kareem' MiddleName='' LastName='Abdul-Jabbar' Suffix='' BirthDate='9/21/1951' Height='86' Weight='240' />
+  <Player id='ALLENRA01' FirstName='Ray' MiddleName='Jesus' LastName='Allen' Suffix='' BirthDate='4/21/1974' Height='77' Weight='195' />
+  <Player id='SMITHJO04' FirstName='Josh' MiddleName='Kee' LastName='Smith' Suffix='' BirthDate='9/21/1986' Height='81' Weight='220' />
+</Players>

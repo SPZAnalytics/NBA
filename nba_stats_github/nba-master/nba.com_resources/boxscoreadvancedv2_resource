@@ -1,0 +1,49 @@
+# boxscoreadvancedv2 resource
+
+base_url = 'http://stats.nba.com/stats/boxscoreadvancedv2?'
+
+sample_url = 'http://stats.nba.com/stats/boxscoreadvancedv2?EndPeriod=10&EndRange=28800&GameID=0021500821&RangeType=0&Season=2015-16&SeasonType=Regular+Season&StartPeriod=1&StartRange=0'
+
+parameters = {
+    'GameID': "0021500821",
+    'StartPeriod': 1,
+    'EndPeriod': 10,
+    'StartRange': 0,
+    'EndRange': 28800,
+    'RangeType': 0
+}
+
+resultSets = {
+    'PlayerStats': [],
+    'TeamStats': []
+}
+
+teamStats = {
+    headers: [
+        "GAME_ID", "TEAM_ID",
+        "TEAM_NAME", "TEAM_ABBREVIATION",
+        "TEAM_CITY", "MIN",
+        "OFF_RATING", "DEF_RATING",
+        "NET_RATING", "AST_PCT",
+        "AST_TOV", "AST_RATIO",
+        "OREB_PCT", "DREB_PCT",
+        "REB_PCT", "TM_TOV_PCT",
+        "EFG_PCT", "TS_PCT",
+        "USG_PCT", "PACE", "PIE"
+    ],
+
+    rowSet: []
+}
+
+playerStats = {
+    headers: [
+        "GAME_ID", "TEAM_ID", "TEAM_ABBREVIATION",
+        "TEAM_CITY", "PLAYER_ID", "PLAYER_NAME",
+        "START_POSITION", "COMMENT", "MIN",
+        "OFF_RATING", "DEF_RATING", "NET_RATING",
+        "AST_PCT", "AST_TOV", "AST_RATIO",
+        "OREB_PCT", "DREB_PCT", "REB_PCT",
+        "TM_TOV_PCT", "EFG_PCT", "TS_PCT",
+        "USG_PCT", "PACE", "PIE"
+    ]
+}

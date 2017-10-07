@@ -1,0 +1,6 @@
+import urllib
+import simplejson
+ 
+response = urllib2.urlopen("http://stats.nba.com/js/data/sportvu/catchShootData.js")
+data = simplejson.load(response)
+print(data)

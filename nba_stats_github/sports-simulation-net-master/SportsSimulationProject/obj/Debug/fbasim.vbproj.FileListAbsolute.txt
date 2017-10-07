@@ -1,0 +1,13 @@
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\bin\Debug\fbasim.dll
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\bin\Debug\fbasim.pdb
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\bin\Debug\fbasim.xml
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\obj\Debug\fbasim.Resources.resources
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\obj\Debug\GenerateResource.read.1.tlog
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\obj\Debug\GenerateResource.write.1.tlog
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\obj\Debug\fbasim.dll
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\obj\Debug\fbasim.xml
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\obj\Debug\fbasim.pdb
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\bin\Release\fbasim.dll
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\bin\Release\fbasim.pdb
+C:\Users\sansbacon\Documents\Visual Studio 2010\Projects\fbasim\fbasim\bin\Release\fbasim.xml

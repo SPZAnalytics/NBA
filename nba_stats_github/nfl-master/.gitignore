@@ -1,0 +1,4 @@
+*.sql
+*.pyc
+*.gz
+*.zip

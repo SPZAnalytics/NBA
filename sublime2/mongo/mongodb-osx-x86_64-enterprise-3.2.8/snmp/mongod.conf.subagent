@@ -1,0 +1,23 @@
+# simple mongod.conf for running snmp as subagent
+
+##########################################################################
+#
+# The following section defines the agent/subagent communication pathway
+# Please modify as needed for your target OS and environment
+# 
+# ########################################################################
+
+#
+# For Linux - using Unix domain socket
+#
+agentXSocket /tmp/agentx/master
+
+# On RHEL/CENTOS you may need to replace agentXSocket with agentx-master
+# mongod will issue a warning if needed: "Warning: Unknown token: agentXSocket"
+#agentx-master /tmp/agentx/master
+
+#
+# For Windows - using TCP
+#
+#agentXSocket tcp:localhost:707
+

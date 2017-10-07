@@ -1,0 +1,42 @@
+base_url: http://stats.nba.com/stats/teamdashboardbygeneralsplits?
+
+sample_url:
+http://stats.nba.com/stats/teamdashboardbygeneralsplits?DateFrom=&DateTo=&GameSegment=&LastNGames=10&LeagueID=00&Location=&MeasureType=Base&Month=0&OpponentTeamID=0&Outcome=&PORound=0&PaceAdjust=N&PerMode=PerGame&Period=0&PlusMinus=N&Rank=N&Season=2015-16&SeasonSegment=&SeasonType=Regular+Season&ShotClockRange=&TeamID=1610612751&VsConference=&VsDivision=
+
+resource: "teamdashboardbygeneralsplits",
+
+parameters = {
+    MeasureType: "Base",
+    PerMode: "PerGame",
+    PlusMinus: "N",
+    PaceAdjust: "N",
+    Rank: "N",
+    LeagueID: "00",
+    Season: "2015-16",
+    SeasonType: "Regular Season",
+    PORound: 0,
+    TeamID: 1610612751,
+    Outcome: None,
+    Location: None,
+    Month: 0,
+    SeasonSegment: None,
+    DateFrom: None,
+    DateTo: None,
+    OpponentTeamID: 0,
+    VsConference: None,
+    VsDivision: None,
+    GameSegment: None,
+    Period: 0,
+    ShotClockRange: None,
+    LastNGames: 10
+}
+
+
+resultSets = {
+    "OverallTeamDashboard": {"rowSet": ["Overall"]},
+    "LocationTeamDashboard": {"rowSet": ["Home", "Road"]},
+    "WinsLossesTeamDashboard": {"rowSet": ["Wins", "Losses"]},
+    "MonthTeamDashboard":  {"rowSet": ["Month1", "Month2"]},
+    "PrePostAllStarTeamDashboard": {"rowSet": ["Pre All-Star", "Post All-Star"]}
+    "DaysRestTeamDashboard": {"rowSet": ["0 Days Rest", "1 Days Rest", "2 Days Rest", "6+ Days Rest"]}
+}

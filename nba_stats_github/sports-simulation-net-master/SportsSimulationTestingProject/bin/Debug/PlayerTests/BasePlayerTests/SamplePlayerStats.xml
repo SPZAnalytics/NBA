@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Players>
+  <Player id="ALLENRA01">
+    <Season year="2010">
+      <TeamSeason>
+        <Points>2010</Points>
+        <Rebounds>201</Rebounds>
+      </TeamSeason>
+      <TeamSeason>
+        <Points>2010</Points>
+        <Rebounds>201</Rebounds>
+      </TeamSeason>
+    </Season>
+    <Season year="2009">
+      <TeamSeason>
+        <Points>2009</Points>
+        <Rebounds>209</Rebounds>
+      </TeamSeason>
+      <TeamSeason>
+        <Points>2009</Points>
+        <Rebounds>209</Rebounds>
+      </TeamSeason>
+    </Season>
+  </Player>
+</Players>

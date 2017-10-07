@@ -1,0 +1,49 @@
+
+# simple mongod.conf for running snmp as master
+
+# only bind to localhost port 1161
+agentaddress 127.0.0.1:1161
+
+# suppress snmp client connect messages
+dontLogTCPWrappersConnects 1
+
+#       sec.name  source          community
+com2sec local     localhost       mongodb
+com2sec mynetwork 10.0.0.0/8      mongodb
+
+####
+# Second, map the security names into group names:
+
+#             	sec.model  sec.name
+group MyRWGroup	v1         local
+group MyRWGroup	v2c        local
+group MyRWGroup	usm        local
+group MyROGroup v1         mynetwork
+group MyROGroup v2c        mynetwork
+group MyROGroup usm        mynetwork
+
+####
+# Third, create a view for us to let the groups have rights to:
+
+#           incl/excl subtree                          mask
+view all    included  .1                               80
+
+####
+# Finally, grant the 2 groups access to the 1 view with different
+# write permissions:
+
+#                context sec.model sec.level match  read   write  notif
+access MyROGroup ""      any       noauth    exact  all    none   none
+access MyRWGroup ""      any       noauth    exact  all    all    none
+
+# rwuser: a SNMPv3 read-write user
+#   arguments:  user [noauth|auth|priv] [restriction_oid]
+
+rwuser  admin  
+
+# rocommunity: a SNMPv1/SNMPv2c read-only access community name
+#   arguments:  community [default|hostname|network/bits] [oid]
+
+# We limit unauthenticated requesters to the system contact info
+rocommunity  public default .1.3.6.1.2.1.1.4 
+
